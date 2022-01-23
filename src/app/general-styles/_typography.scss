@@ -1,0 +1,117 @@
+//typography
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira&display=swap");
+
+$noto: "Noto Sans", sans-serif;
+$hind: "Hind Vadodara", sans-serif;
+$saira: "Saira", sans-serif;
+
+$regular: 400;
+$bold: 700;
+
+@function toRem($size) {
+  @return math.div($size, 16px) * 1rem;
+}
+
+//font-size according to the typography - h means header, s means subtitle, b means body, and c for caption.
+$h1: toRem(96px);
+$h2: toRem(55px);
+$h3: toRem(48px);
+$h4: toRem(34px);
+$h5: toRem(24px);
+$h6: toRem(20px);
+$s1: toRem(18px);
+$b1: toRem(18px);
+$h7: toRem(16px);
+$s2: toRem(16px);
+$b2: toRem(16px);
+$b3: toRem(14px);
+$c: toRem(14px);
+$s3: toRem(12px);
+
+//typography in accordance to the design system
+
+@mixin h1 {
+  font-size: $h1;
+  font-family: $noto;
+  font-weight: $regular;
+}
+
+@mixin h2 {
+  font-size: $h2;
+  font-family: $noto;
+  font-weight: $bold;
+}
+
+@mixin h3 {
+  font-size: $h3;
+  font-family: $noto;
+  font-weight: $regular;
+}
+
+@mixin h4 {
+  font-size: $h4;
+  font-family: $noto;
+  font-weight: $regular;
+}
+
+@mixin h5 {
+  font-size: $h5;
+  font-family: $noto;
+  font-weight: $regular;
+}
+
+@mixin h6 {
+  font-size: $h6;
+  font-family: $noto;
+  font-weight: $bold;
+}
+
+@mixin h7 {
+  font-size: $h7;
+  font-family: $noto;
+  font-weight: $bold;
+}
+
+@mixin s1 {
+  font-size: $s1;
+  font-family: $noto;
+  font-weight: $regular;
+}
+
+@mixin s2 {
+  font-size: $s2;
+  font-family: $noto;
+  font-weight: $regular;
+}
+
+@mixin s3 {
+  font-size: $s3;
+  font-family: $noto;
+  font-weight: $regular;
+}
+
+@mixin b1 {
+  font-size: $b1;
+  font-family: $hind;
+  font-weight: $regular;
+}
+
+@mixin b2 {
+  font-size: $b2;
+  font-family: $hind;
+  font-weight: $regular;
+}
+
+@mixin b3 {
+  font-size: $b3;
+  font-family: $hind;
+  font-weight: $regular;
+}
+
+@mixin c {
+  font-size: $c;
+  font-family: $saira;
+  font-weight: $regular;
+}
