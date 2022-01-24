@@ -1,1 +1,45 @@
 @use "../../component-styles/home-page/" as he;
+@use "../../general-styles/" as gs;
+
+.hero-container {
+  display: flex;
+  padding-top: 68px;
+  height: auto;
+  align-items: center;
+  align-content: center;
+
+  &_description {
+    margin-left: 121px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+
+    &--tagline {
+      @include gs.h4;
+      margin-top: 18px;
+      width: 584px;
+      display: flex;
+    }
+
+    &--info {
+      @include gs.b1;
+      margin-top: 18px;
+      width: 584px;
+
+      margin-bottom: 42px;
+    }
+  }
+}
+
+.hero-image {
+  width: 100%;
+  display: flex;
+  justify-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.emphasis {
+  @include gs.b1;
+  font-weight: gs.$bold;
+}

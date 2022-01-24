@@ -1,0 +1,24 @@
+@use "../../general-styles/" as gs;
+
+.tags {
+  width: auto;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  @include gs.h6;
+  color: gs.$white;
+  background-color: gs.$deep-lavender;
+  margin-right: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.two-tags {
+  display: flex;
+
+  margin-bottom: 18px;
+}

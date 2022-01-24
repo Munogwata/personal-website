@@ -17,6 +17,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MunoImageComponent } from './reusable-home-componets/muno-image/muno-image.component';
 import { TagsComponent } from './reusable-home-componets/tags/tags.component';
+import { HeroComponent } from './reusable-home-componets/hero/hero.component';
 
 
 
@@ -29,6 +30,7 @@ import { TagsComponent } from './reusable-home-componets/tags/tags.component';
     NavigationBarComponent,
     MunoImageComponent,
     TagsComponent,
+    HeroComponent,
    
   ],
   imports: [
