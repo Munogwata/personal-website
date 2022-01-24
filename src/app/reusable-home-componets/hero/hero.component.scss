@@ -16,7 +16,6 @@
     width: auto;
     display: flex;
     flex-direction: column;
-    margin-right: 150px;
 
     &--tagline {
       @include gs.h4;
@@ -39,11 +38,13 @@
 .hero-image {
   width: 100%;
   display: flex;
-  justify-items: flex-end;
-  justify-content: flex-end;
+  justify-items: end;
+  justify-content: end;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   align-content: center;
+  margin-right: 15px;
+  background-color: yellowgreen;
 }
 
 .emphasis {

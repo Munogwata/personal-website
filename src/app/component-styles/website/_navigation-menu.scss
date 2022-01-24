@@ -69,6 +69,8 @@
 
 .colored-nav-bar {
   background-image: url("../../../assets/images/general/Background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: gs.$mobile) {
