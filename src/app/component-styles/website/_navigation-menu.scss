@@ -1,13 +1,31 @@
 @use "../../general-styles/" as gs;
 
 .top-menu {
-  width: 1197px;
+  width: 100%;
   height: auto;
-  margin-right: 121px;
+  padding-right: 121px;
   margin-top: 7px;
   display: flex;
   align-items: center;
   align-content: center;
   justify-items: flex-end;
   justify-content: flex-end;
+}
+
+mat-toolbar {
+  background-color: transparent;
+}
+
+.main-menu {
+  width: 100%;
+  margin-top: 17px;
+  padding-left: 121px;
+  padding-right: 121px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: gs.$black;
+  @include gs.ml;
+  margin-right: 57px;
 }

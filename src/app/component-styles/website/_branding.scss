@@ -1,0 +1,21 @@
+@use "../../general-styles/" as gs;
+
+.logo {
+  border-radius: 50%;
+  background-color: gs.$black;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  width: 55px;
+  height: 55px;
+  color: gs.$white;
+  @include gs.h4;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: gs.$white;
+  @include gs.h4;
+}
