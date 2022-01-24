@@ -1,0 +1,13 @@
+@use "../../general-styles/" as gs;
+
+.top-menu {
+  width: 1197px;
+  height: auto;
+  margin-right: 121px;
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-items: flex-end;
+  justify-content: flex-end;
+}
