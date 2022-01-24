@@ -10,17 +10,26 @@
   align-content: center;
   justify-items: flex-end;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
-mat-toolbar {
+.mat-toolbar {
   background-color: transparent;
-  top: 0;
-  position: sticky;
+}
+
+.page {
+  min-height: 100%;
+}
+
+.page-container {
+  min-height: 100%;
+  width: 100%;
 }
 
 .main-menu {
   width: 100%;
   margin-top: 7px;
+  padding-bottom: 7px;
   padding-left: 121px;
   padding-right: 121px;
   height: auto;
@@ -30,6 +39,7 @@ mat-toolbar {
   align-items: center;
   align-content: center;
   height: auto;
+  cursor: pointer;
 }
 
 .menu-link {
@@ -54,6 +64,10 @@ mat-toolbar {
     background-color: gs.$black;
     color: gs.$white;
   }
+}
+
+.colored-nav-bar {
+  background-image: url("../../../assets/images/general/Background.svg");
 }
 
 @media (max-width: gs.$mobile) {

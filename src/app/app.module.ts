@@ -15,6 +15,9 @@ import { NavigationBarComponent } from './reuseable-components/navigation-bar/na
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
+import { MunoImageComponent } from './reusable-home-componets/muno-image/muno-image.component';
+import { TagsComponent } from './reusable-home-componets/tags/tags.component';
+
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { MatListModule } from '@angular/material/list';
     LogoComponent,
     HomeComponent,
     AboutComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    MunoImageComponent,
+    TagsComponent,
+   
   ],
   imports: [
     BrowserModule,
