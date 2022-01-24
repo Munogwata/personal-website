@@ -22,3 +22,15 @@
 
   margin-bottom: 18px;
 }
+
+@media (max-width: gs.$mobile) {
+  .tags {
+    margin-bottom: 11px;
+    margin-right: 0px;
+    width: 85%;
+  }
+  .two-tags {
+    flex-direction: column;
+    margin-bottom: 11px;
+  }
+}

@@ -7,17 +7,22 @@
   height: auto;
   align-items: center;
   align-content: center;
+  justify-items: space-between;
+  justify-content: space-between;
+  //width: 100%;
 
   &_description {
     margin-left: 121px;
     width: auto;
     display: flex;
     flex-direction: column;
+    margin-right: 150px;
 
     &--tagline {
       @include gs.h4;
       margin-top: 18px;
       width: 584px;
+      width: auto;
       display: flex;
     }
 
@@ -37,9 +42,98 @@
   justify-items: flex-end;
   justify-content: flex-end;
   flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
 .emphasis {
   @include gs.b1;
   font-weight: gs.$bold;
+}
+
+@media (min-width: gs.$mobile) and (max-width: gs.$tablet) {
+  .hero-container {
+    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    margin-right: 0px;
+
+    &_description {
+      margin-left: 121px;
+      margin-right: 0px;
+      width: auto;
+      &--tagline {
+        width: 450px;
+      }
+
+      &--info {
+        width: 450px;
+      }
+    }
+  }
+
+  .hero-image {
+    margin-top: 15px;
+    width: auto;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+
+    align-items: center;
+    align-content: center;
+  }
+}
+
+@media (max-width: gs.$mobile) {
+  .hero-image {
+    margin-top: 15px;
+  }
+
+  .hero-container_description {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+  .hero-container {
+    margin-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    margin-right: 0px;
+
+    &_description {
+      margin-left: 0px;
+      margin-right: 0px;
+      width: auto;
+
+      &--tagline {
+        width: 350px;
+      }
+
+      &--info {
+        width: 350px;
+      }
+    }
+  }
+
+  .hero-image {
+    margin-top: 15px;
+    width: auto;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+
+    align-items: center;
+    align-content: center;
+  }
 }
