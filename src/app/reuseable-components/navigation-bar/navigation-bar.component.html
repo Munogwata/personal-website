@@ -1,0 +1,87 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    [ngClass]="{ hidden: !(isHandset$ | async) == true }"
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+    position="end"
+  >
+    <mat-toolbar>
+      <span class="space-between"></span>
+      <button
+        class="button-container"
+        mat-icon-button
+        (click)="drawer.toggle()"
+      >
+        <mat-icon class="button">close</mat-icon>
+      </button>
+    </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">Link 1</a>
+      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item href="#">Link 3</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!--social-media-menu-->
+
+    <mat-toolbar>
+      <mat-toolbar-row class="top-menu">
+        <a href="https://github.com/Munogwata" target="_blank">
+          <img
+            src="../../../assets/images/menu-items/Github_logo.png"
+            class="top-menu-icons"
+            alt="link to Munozovepi's github account"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/munozovepi-gwata-037606126/">
+          <img
+            src="../../../assets/images/menu-items/Linkedin_icon.png"
+            class="top-menu-icons"
+            alt="link to Munozovepi's Linkedin account"
+          />
+        </a>
+      </mat-toolbar-row>
+
+      <!--main menu-->
+      <mat-toolbar-row class="main-menu">
+        <app-logo></app-logo>
+        <span class="space-between"></span>
+        <a
+          routerLink="About"
+          [ngClass]="{ hidden: !(isHandset$ | async) == false }"
+          class="menu-link"
+        >
+          About
+        </a>
+        <a
+          href=""
+          [ngClass]="{ hidden: !(isHandset$ | async) == false }"
+          class="menu-link"
+        >
+          Contact
+        </a>
+
+        <button
+          class="button-container"
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async"
+        >
+          <mat-icon class="button" aria-label="Side nav toggle icon"
+            >menu</mat-icon
+          >
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

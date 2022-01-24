@@ -14,18 +14,50 @@
 
 mat-toolbar {
   background-color: transparent;
+  top: 0;
+  position: sticky;
 }
 
 .main-menu {
   width: 100%;
-  margin-top: 17px;
+  margin-top: 7px;
   padding-left: 121px;
   padding-right: 121px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  height: auto;
 }
 
 .menu-link {
   text-decoration: none;
   color: gs.$black;
   @include gs.ml;
-  margin-right: 57px;
+  margin-left: 57px;
+}
+
+.button {
+  background-color: none;
+  color: gs.$white;
+  width: 45px;
+
+  &-container {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: gs.$black;
+    color: gs.$white;
+  }
+}
+
+@media (max-width: gs.$mobile) {
+  .menu-link {
+    display: none;
+  }
 }
