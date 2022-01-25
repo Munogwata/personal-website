@@ -41,3 +41,8 @@ a {
   text-decoration: none;
   color: gs.$black;
 }
+
+a:hover {
+  color: gs.$deep-lavender;
+  @include gs.h6;
+}
