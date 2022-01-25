@@ -1,0 +1,46 @@
+@use "../../general-styles/" as gs;
+
+.section-container {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.small-card {
+  display: flex;
+  flex-direction: column;
+  height: 580px;
+  width: 465px;
+  justify-content: space-around;
+
+  align-items: center;
+  align-content: center;
+  border: gs.$basic-grey;
+  box-shadow: 5px 5px 10px grey;
+  margin-bottom: 135px;
+
+  &-image {
+    width: 406px;
+    height: 232px;
+    background-color: grey;
+    justify-self: center;
+  }
+  &-label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: greenyellow;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.number {
+  @include gs.h2;
+}
+
+.project-title {
+  @include gs.h4;
+}

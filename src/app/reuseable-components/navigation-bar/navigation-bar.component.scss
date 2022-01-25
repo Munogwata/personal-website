@@ -2,6 +2,7 @@
 
 .sidenav-container {
   height: 100%;
+  background-color: white;
 }
 
 .sidenav {
@@ -20,4 +21,9 @@
 
 .hidden {
   display: none;
+}
+
+.default-page {
+  min-height: 100vh;
+  background-color: green;
 }

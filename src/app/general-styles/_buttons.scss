@@ -1,0 +1,29 @@
+@use "../general-styles/colors" as cs;
+@use "../general-styles/typography" as ty;
+
+@mixin website-button {
+  border: none;
+  width: 301px;
+  height: 72px;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.small-card-button {
+  @include website-button;
+  @include ty.h5;
+  background-color: cs.$main-lavender;
+  color: cs.$dark-lavender;
+}
+
+.project-button {
+  @include website-button;
+  background-color: cs.$dark-lavender;
+  color: cs.$white;
+}

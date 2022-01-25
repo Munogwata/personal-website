@@ -22,6 +22,9 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ContactFormComponent } from './reusable-home-componets/contact-form/contact-form.component';
 import { ProjectOneComponent } from './projects/project-one/project-one.component';
 import { NavigationLinksComponent } from './reusable-home-componets/navigation-links/navigation-links.component';
+import { ProjectTwoComponent } from './projects/project-two/project-two.component';
+import { ProjectThreeComponent } from './projects/project-three/project-three.component';
+import { SmallProjectCardsComponent } from './reusable-home-componets/small-project-cards/small-project-cards.component';
 
 
 
@@ -38,7 +41,10 @@ import { NavigationLinksComponent } from './reusable-home-componets/navigation-l
     ContactComponent,
     ContactFormComponent,
     ProjectOneComponent,
-    NavigationLinksComponent
+    NavigationLinksComponent,
+    ProjectTwoComponent,
+    ProjectThreeComponent,
+    SmallProjectCardsComponent
     
    
   ],
