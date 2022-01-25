@@ -1,0 +1,65 @@
+@use "../../general-styles/" as gs;
+
+$bottom-spacing: 15px;
+$container-width: 455px;
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 121px;
+  justify-content: flex-start;
+  justify-items: flex-start;
+}
+
+.project-number {
+  @include gs.h2r;
+  display: inline-block;
+  margin-bottom: $bottom-spacing;
+}
+
+.project-heading {
+  @include gs.h3;
+  margin-bottom: 19px;
+}
+.project-description {
+  @include gs.s1;
+  width: $container-width;
+  margin-bottom: $bottom-spacing;
+}
+
+.project-description-emphaisis {
+  @include gs.s1;
+  color: gs.$dark-lavender;
+  margin-bottom: $bottom-spacing;
+  width: $container-width;
+}
+
+.project-subheading {
+  @include gs.s1;
+  font-weight: gs.$bold;
+  margin-bottom: $bottom-spacing;
+}
+
+.button-style {
+  border: none;
+  width: 301px;
+  height: 72px;
+  @include gs.h5;
+  color: gs.$white;
+  background-color: gs.$dark-lavender;
+  border-radius: 10px;
+  margin-bottom: $bottom-spacing;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}

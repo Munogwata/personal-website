@@ -18,6 +18,10 @@ import { MatListModule } from '@angular/material/list';
 import { MunoImageComponent } from './reusable-home-componets/muno-image/muno-image.component';
 import { TagsComponent } from './reusable-home-componets/tags/tags.component';
 import { HeroComponent } from './reusable-home-componets/hero/hero.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ContactFormComponent } from './reusable-home-componets/contact-form/contact-form.component';
+import { ProjectOneComponent } from './projects/project-one/project-one.component';
+import { NavigationLinksComponent } from './reusable-home-componets/navigation-links/navigation-links.component';
 
 
 
@@ -31,6 +35,11 @@ import { HeroComponent } from './reusable-home-componets/hero/hero.component';
     MunoImageComponent,
     TagsComponent,
     HeroComponent,
+    ContactComponent,
+    ContactFormComponent,
+    ProjectOneComponent,
+    NavigationLinksComponent
+    
    
   ],
   imports: [

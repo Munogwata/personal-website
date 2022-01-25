@@ -45,6 +45,12 @@ $s3: toRem(12);
   font-weight: $bold;
 }
 
+@mixin h2r {
+  @include h2;
+  writing-mode: vertical-lr;
+  text-orientation: inherit;
+}
+
 @mixin h3 {
   font-size: $h3;
   font-family: $noto;

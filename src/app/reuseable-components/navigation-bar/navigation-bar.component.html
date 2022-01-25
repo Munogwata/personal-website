@@ -21,7 +21,6 @@
     </mat-toolbar>
     <mat-nav-list>
       <a mat-list-item class="menu-link" routerLink="About">About</a>
-      <a mat-list-item class="menu-link" href="#">Contact</a>
     </mat-nav-list>
   </mat-sidenav>
 
@@ -56,13 +55,6 @@
           class="menu-link"
         >
           About
-        </a>
-        <a
-          href=""
-          [ngClass]="{ hidden: !(isHandset$ | async) == false }"
-          class="menu-link"
-        >
-          Contact
         </a>
 
         <button

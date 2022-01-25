@@ -38,13 +38,12 @@
 .hero-image {
   width: 100%;
   display: flex;
-  justify-items: end;
-  justify-content: end;
+  justify-items: flex-end;
+  justify-content: flex-end;
   flex-direction: column;
   align-items: flex-end;
   align-content: center;
   margin-right: 15px;
-  background-color: yellowgreen;
 }
 
 .emphasis {
