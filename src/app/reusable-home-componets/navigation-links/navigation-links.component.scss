@@ -1,0 +1,43 @@
+@use "../../general-styles/" as gs;
+
+$bottom-space: 20px;
+
+.navigation-links-container {
+  margin-right: 49px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-items: flex-start;
+}
+
+.navigation-heading {
+  @include gs.h4;
+  margin-bottom: 20px;
+}
+
+.link-container {
+  width: 245px;
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+  justify-content: flex-start;
+  justify-items: flex-start;
+
+  &_number {
+    @include gs.h4;
+    margin-right: 5px;
+    margin-bottom: 24px;
+    padding-top: 5px;
+  }
+
+  &_link {
+    @include gs.h6;
+    padding-top: 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: gs.$black;
+}
