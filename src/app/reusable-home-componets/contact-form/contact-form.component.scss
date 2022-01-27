@@ -1,0 +1,11 @@
+@use "../../general-styles/" as gs;
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  background-color: gs.$white;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 15px;
+  padding-top: 5px;
+}

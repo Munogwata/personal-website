@@ -25,6 +25,7 @@ import { NavigationLinksComponent } from './reusable-home-componets/navigation-l
 import { ProjectTwoComponent } from './projects/project-two/project-two.component';
 import { ProjectThreeComponent } from './projects/project-three/project-three.component';
 import { SmallProjectCardsComponent } from './reusable-home-componets/small-project-cards/small-project-cards.component';
+import { ToolboxComponent } from './reusable-home-componets/toolbox/toolbox.component';
 
 
 
@@ -44,7 +45,8 @@ import { SmallProjectCardsComponent } from './reusable-home-componets/small-proj
     NavigationLinksComponent,
     ProjectTwoComponent,
     ProjectThreeComponent,
-    SmallProjectCardsComponent
+    SmallProjectCardsComponent,
+    ToolboxComponent
     
    
   ],

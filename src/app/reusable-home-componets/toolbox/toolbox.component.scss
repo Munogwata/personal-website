@@ -1,0 +1,81 @@
+@use "../../general-styles/" as gs;
+
+.toolbox-container {
+  width: 100%;
+  background-color: gs.$white;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 50px;
+  flex-direction: column;
+}
+
+.heading {
+  @include gs.h2;
+}
+.icons-container {
+  display: flex;
+  box-shadow: 5px 5px 3px rgba($color: #000000, $alpha: 0.25);
+  border: gs.$basic-grey 1 solid;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  background-color: gs.$white;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.r1-p {
+  display: flex;
+  flex-direction: row;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 31px;
+  border: solid 1px gs.$basic-grey;
+  width: 1186px;
+  height: 587px;
+  background-color: gs.$white;
+}
+
+.image-box {
+  width: 117px;
+  height: 143px;
+  display: flex;
+  justify-items: space-between;
+  justify-content: space-between;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  background-color: gs.$white;
+
+  &-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+
+    background-color: gs.$white;
+    object-fit: cover;
+
+    &-label {
+      @include gs.s1;
+    }
+  }
+}
