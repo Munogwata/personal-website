@@ -27,3 +27,12 @@
   background-color: cs.$dark-lavender;
   color: cs.$white;
 }
+
+.slim-button {
+  @include website-button;
+  @include ty.h5;
+  background-color: cs.$dark-lavender;
+  color: cs.$white;
+  width: 155px;
+  height: 50px;
+}

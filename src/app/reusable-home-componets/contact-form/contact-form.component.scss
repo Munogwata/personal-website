@@ -10,6 +10,7 @@
   padding: 15px;
   align-items: center;
   align-content: center;
+  margin-bottom: 35px;
 }
 
 .form-box {
@@ -26,10 +27,15 @@
 
 .heading {
   @include gs.h4;
+  margin-bottom: 50px;
 }
 
 .input-row {
   display: flex;
+  margin-bottom: 50px;
+  width: 100%;
+  justify-content: space-between;
+  justify-items: space-between;
 }
 
 .form {
@@ -38,4 +44,52 @@
   justify-content: space-between;
   justify-items: space-between;
   height: 100%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: space-between;
+  background-color: gs.$white;
+  width: 350px;
+  padding: 10px;
+
+  &-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: space-between;
+    background-color: gs.$white;
+
+    padding: 10px;
+    width: 100%;
+  }
+
+  &-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: space-between;
+    background-color: gs.$white;
+    height: 200px;
+    padding: 10px;
+    width: 100%;
+  }
+}
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  justify-items: flex-end;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
