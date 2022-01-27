@@ -1,11 +1,30 @@
 <span class="contact-container">
   <span class="form-box">
-    <span class="heading"> get in touch </span>
-    <span>
-      <form class="" action="">
-        <span>
-          <input type="text" name="" id="" />
+    <span class="heading"> Get in touch </span>
+    <span class="form">
+      <form action="https://formsubmit.co/muno.gwata@gmail.com" method="POST">
+        <span class="input-row">
+          <input type="text" name="name" required />
+          <input type="email" name="email" required />
         </span>
+
+        <span class="input-row">
+          <input type="email" name="email" placeholder="Email Address" />
+        </span>
+
+        <span class="hidden">
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="New submission from personal website!"
+          />
+        </span>
+
+        <span>
+          <input type="text" name="message" required />
+        </span>
+        <button type="submit">Send</button>
       </form>
     </span>
   </span>

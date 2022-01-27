@@ -7,5 +7,35 @@
   justify-content: center;
   justify-items: center;
   margin-top: 15px;
-  padding-top: 5px;
+  padding: 15px;
+  align-items: center;
+  align-content: center;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: space-between;
+  justify-items: space-between;
+  height: 665px;
+  background-color: gs.$main-lavender;
+  padding: 50px;
+  color: gs.$dark-lavender;
+}
+
+.heading {
+  @include gs.h4;
+}
+
+.input-row {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: space-between;
+  height: 100%;
 }
