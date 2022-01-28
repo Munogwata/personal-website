@@ -1,5 +1,6 @@
 @use "../general-styles/colors" as cs;
 @use "../general-styles/typography" as ty;
+@use "../general-styles/media-queries" as ms;
 
 @mixin website-button {
   border: none;
@@ -35,4 +36,15 @@
   color: cs.$white;
   width: 155px;
   height: 50px;
+}
+
+@media (max-width: ms.$tablet) {
+  .small-card-button {
+    @include website-button;
+    @include ty.h5;
+    width: 300px;
+    height: 72px;
+    background-color: cs.$main-lavender;
+    color: cs.$dark-lavender;
+  }
 }

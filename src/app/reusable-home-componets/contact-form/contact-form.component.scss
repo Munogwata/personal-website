@@ -7,7 +7,7 @@
   justify-content: center;
   justify-items: center;
   margin-top: 15px;
-  padding: 15px;
+
   align-items: center;
   align-content: center;
   margin-bottom: 35px;
@@ -16,7 +16,7 @@
 .form-box {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 75%;
   justify-content: space-between;
   justify-items: space-between;
   height: 665px;
@@ -26,7 +26,7 @@
 }
 
 .heading {
-  @include gs.h4;
+  @include gs.h2;
   margin-bottom: 50px;
 }
 
@@ -92,4 +92,24 @@ input:focus {
   outline: none;
   border: none;
   text-decoration: none;
+}
+
+@media (max-width: gs.$tablet) {
+  .form-box {
+    width: 60%;
+  }
+
+  .heading {
+    @include gs.h4;
+    margin-bottom: 50px;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .input-container {
+    margin-bottom: 15px;
+    width: 100%;
+  }
 }

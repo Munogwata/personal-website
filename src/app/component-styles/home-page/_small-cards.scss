@@ -44,3 +44,19 @@
 .project-title {
   @include gs.h4;
 }
+
+@media (max-width: gs.$tablet) {
+  .project-title {
+    @include gs.h5;
+  }
+
+  .small-card {
+    height: 500px;
+    width: 415px;
+  }
+
+  .small-card-image {
+    width: 305px;
+    height: 150px;
+  }
+}

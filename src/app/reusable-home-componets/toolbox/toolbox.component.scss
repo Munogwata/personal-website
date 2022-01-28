@@ -79,3 +79,37 @@
     }
   }
 }
+
+@media (max-width: gs.$tablet) {
+  .heading {
+    @include gs.h6;
+    margin-bottom: 20px;
+  }
+
+  .icons-container {
+    height: fit-content;
+  }
+
+  .icons-container {
+    width: 80%;
+    flex-direction: row;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .image-box {
+    width: 100px;
+    height: 75px;
+
+    &-icon {
+      width: 55px;
+      height: 55px;
+
+      &-label {
+        @include gs.b3;
+      }
+    }
+  }
+}

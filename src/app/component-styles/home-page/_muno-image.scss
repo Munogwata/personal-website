@@ -31,15 +31,16 @@
 
   &_lawyer {
     margin-top: 57px;
-    margin-left: -82px;
+    margin-left: -50px;
     display: flex;
-    width: 258px;
+    width: 255px;
+    padding: 5px;
     height: 45px;
     border-radius: 10px;
     background-image: radial-gradient(at 100% bottom, gs.$white);
     border: solid 2px rgba($color: gs.$white, $alpha: 0.7);
-    justify-items: center;
-    justify-content: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
     align-content: center;
     align-items: center;
 
@@ -65,26 +66,68 @@
   }
 }
 
-@media (min-width: gs.$mobile) and (max-width: gs.$tablet) {
+.color-tag {
+  margin-top: 295px;
+  margin-left: -255px;
+  background-color: gs.$main-lavender;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 282px;
+  height: 28px;
+  @include gs.h6;
+  color: gs.$white;
+  border-radius: 8px;
+}
+
+@media (max-width: gs.$tablet) {
+  .image-box {
+    margin-left: 105px;
+    margin-bottom: 45px;
+  }
+
   .muno-frame {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
+    margin-left: 140px;
   }
 
   .image-box_unicorn {
+    margin-top: 80px;
+    border-radius: 50%;
+    background-color: gs.$soft-blue;
     width: 25px;
     height: 25px;
-    font-size: 14px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: 16px;
+    margin-right: -150px;
+
+    z-index: 1;
   }
 
   .image-box_lawyer {
-    width: 140px;
-    height: 32px;
-    margin-top: 45px;
-    margin-left: -40px;
+    display: flex;
+    width: fit-content;
+    height: 30px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: -25px;
+    margin-right: 15px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
 
     &__label {
-      font-size: 10px;
+      font-size: 14px;
+      width: fit-content;
+      display: flex;
     }
 
     &__icon {
@@ -94,37 +137,23 @@
       padding-left: 1px;
     }
   }
-}
 
-@media (max-width: gs.$mobile) {
-  .muno-frame {
-    width: 95px;
-    height: 95px;
-  }
-
-  .image-box_unicorn {
-    width: 15px;
-    height: 15px;
-    font-size: 10px;
-    margin-top: 45px;
-    margin-right: -10px;
-  }
-
-  .image-box_lawyer {
-    width: 120px;
+  .color-tag {
+    margin-top: 145px;
+    margin-left: -175px;
+    background-color: gs.$main-lavender;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    width: fit-content;
+    padding-right: 15px;
+    padding-left: 15px;
     height: 28px;
-    margin-top: 25px;
-    margin-left: -20px;
-
-    &__label {
-      font-size: 10px;
-    }
-
-    &__icon {
-      width: 10px;
-      height: 10px;
-      font-size: 8px;
-      padding-left: 1px;
-    }
+    @include gs.h6;
+    font-size: 12px;
+    color: gs.$white;
+    border-radius: 8px;
   }
 }
