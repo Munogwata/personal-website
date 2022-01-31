@@ -1,8 +1,15 @@
-@use "../general-styles/colors" as cs;
+@use "../general-styles/colors" as gs;
 
 .top-menu-icons {
   width: 25px;
   height: 25px;
   object-fit: fill;
   margin-left: 21px;
+}
+
+.muno-image {
+  width: 373px;
+  height: 373px;
+  border-radius: 50%;
+  background-color: gs.$white;
 }

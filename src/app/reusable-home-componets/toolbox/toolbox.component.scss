@@ -82,7 +82,7 @@
 
 @media (max-width: gs.$tablet) {
   .heading {
-    @include gs.h6;
+    @include gs.h4;
     margin-bottom: 20px;
   }
 

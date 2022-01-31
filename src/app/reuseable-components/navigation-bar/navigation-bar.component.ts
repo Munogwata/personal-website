@@ -10,7 +10,7 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 export class NavigationBarComponent {
 
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.Small])
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.Medium,Breakpoints.Small,Breakpoints.XSmall])
     .pipe(
       map(result => result.matches),
       shareReplay()

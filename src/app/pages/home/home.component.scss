@@ -1,3 +1,5 @@
+@use "../../general-styles/" as gs;
+
 .hero-background {
   background-image: url("../../../assets/images/general/Background.svg");
   width: 100%;
@@ -9,8 +11,32 @@
 }
 
 .project-cards {
-  display: block;
+  width: 100%;
+  display: flex;
   margin-bottom: 100px;
   margin-top: 25px;
   background-color: white;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.projects-navigation {
+  display: none;
+}
+
+@media (max-width: gs.$tablet) {
+  .project-cards {
+    margin-top: 5px;
+  }
+
+  .projects-navigation {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: gs.$white;
+    width: 100%;
+    visibility: visible;
+  }
 }

@@ -34,12 +34,19 @@
         <span class="input-row">
           <span class="input-container-message">
             <label for="name">Message</label>
-            <input type="text" name="message" required />
+            <input
+              class="message-input"
+              type="text"
+              name="message"
+              required
+              placeholder="Hello I would love to work together."
+              maxlength="100"
+            />
           </span>
         </span>
 
         <span class="button-container">
-          <button class="slim-button" type="submit">Submit</button>
+          <button id="button" class="slim-button" type="submit">Submit</button>
         </span>
       </form>
     </span>

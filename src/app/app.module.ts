@@ -26,6 +26,11 @@ import { ProjectTwoComponent } from './projects/project-two/project-two.componen
 import { ProjectThreeComponent } from './projects/project-three/project-three.component';
 import { SmallProjectCardsComponent } from './reusable-home-componets/small-project-cards/small-project-cards.component';
 import { ToolboxComponent } from './reusable-home-componets/toolbox/toolbox.component';
+import { HeroAboutComponent } from './reusable-components-about/hero-about/hero-about.component';
+import { AboutMunoImageComponent } from './reusable-components-about/about-muno-image/about-muno-image.component';
+import { AboutBocComponent } from './reusable-components-about/about-boc/about-boc.component';
+import { MediaFeaturesComponent } from './reusable-components-about/media-features/media-features.component';
+import { SandboxComponent } from './reusable-components-about/sandbox/sandbox.component';
 
 
 
@@ -46,7 +51,12 @@ import { ToolboxComponent } from './reusable-home-componets/toolbox/toolbox.comp
     ProjectTwoComponent,
     ProjectThreeComponent,
     SmallProjectCardsComponent,
-    ToolboxComponent
+    ToolboxComponent,
+    HeroAboutComponent,
+    AboutMunoImageComponent,
+    AboutBocComponent,
+    MediaFeaturesComponent,
+    SandboxComponent
     
    
   ],

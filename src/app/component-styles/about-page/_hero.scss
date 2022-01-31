@@ -1,0 +1,120 @@
+@use "../../general-styles/" as gs;
+@use "../../component-styles/home-page/tags" as ts;
+
+.about-hero-container {
+  width: 100%;
+  min-height: 815px;
+  display: flex;
+  flex-direction: column;
+}
+.tags-box {
+  margin-right: 121px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.tagline {
+  @include gs.h4;
+  margin-bottom: 20px;
+  justify-self: center;
+  display: flex;
+}
+
+.background {
+  background-image: url("../../../assets/images/general/Background.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  object-fit: cover;
+
+  min-height: 450px;
+  padding-left: 121px;
+  padding-top: 68px;
+}
+
+.muno-image-box {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: -200px;
+}
+
+//the media queries
+
+@media (min-width: gs.$mobile) and (max-width: gs.$tablet) {
+  .about-hero-container {
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .background {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+  }
+
+  .muno-image-box {
+    padding-top: -175px;
+  }
+
+  .tag-box {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .content-box {
+    width: 80%;
+  }
+}
+
+@media (max-width: gs.$mobile) {
+  .background {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: center;
+
+    display: flex;
+  }
+
+  .tagline {
+    @include gs.h5;
+    margin-bottom: 20px;
+    justify-self: center;
+    display: flex;
+    width: 80%;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .content-box {
+    width: 80%;
+  }
+}
+
+@media (max-width: gs.$tablet) {
+  .tags {
+    margin-bottom: 11px;
+    margin-right: 0px;
+    width: 85%;
+  }
+  .two-tags {
+    flex-direction: column;
+    margin-bottom: 11px;
+  }
+}

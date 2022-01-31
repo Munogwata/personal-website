@@ -1,0 +1,88 @@
+@use "../../general-styles/" as gs;
+
+.about-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: gs.$white;
+  width: 100%;
+}
+
+.heading {
+  @include gs.h4;
+  margin-bottom: 10px;
+}
+
+.ab-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: gs.$white;
+  width: 45%;
+  margin-left: 121px;
+  @include gs.b1;
+}
+
+.emphasis {
+  font-weight: gs.$bold;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: gs.$black;
+  color: gs.$white;
+  margin-bottom: 10px;
+  @include gs.b1;
+  width: 221px;
+  height: fit-content;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 7px 10px 7x rgba($color: #000000, $alpha: 0.2);
+}
+
+.ab-2 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.call-of-action {
+  @include gs.h6;
+  color: gs.$deep-lavender;
+  margin-bottom: 5px;
+}
+
+.quiz-heading {
+  @include gs.h5;
+}
+
+.question {
+  margin-top: 15px;
+  width: 450px;
+  height: 40px;
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  background-color: gs.$basic-grey;
+  color: gs.$black;
+  padding: 15px;
+}
+
+input[name="fact"] {
+  accent-color: gs.$black;
+}
+
+.fact {
+  @include gs.b2;
+  color: gs.$black;
+  margin-left: 10px;
+}
+
+.submit {
+  width: 480px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
