@@ -31,6 +31,12 @@ import { AboutMunoImageComponent } from './reusable-components-about/about-muno-
 import { AboutBocComponent } from './reusable-components-about/about-boc/about-boc.component';
 import { MediaFeaturesComponent } from './reusable-components-about/media-features/media-features.component';
 import { SandboxComponent } from './reusable-components-about/sandbox/sandbox.component';
+import { PublicOpinonComponent } from './public-opinon/public-opinon.component';
+import { MediaComponent } from './media/media.component';
+import { WavyComponent } from './projects/wavy/wavy.component';
+import { ScoreComponent } from './projects/score/score.component';
+import { AstuteComponent } from './projects/astute/astute.component';
+import { MeComponent } from './projects/me/me.component';
 
 
 
@@ -56,7 +62,13 @@ import { SandboxComponent } from './reusable-components-about/sandbox/sandbox.co
     AboutMunoImageComponent,
     AboutBocComponent,
     MediaFeaturesComponent,
-    SandboxComponent
+    SandboxComponent,
+    PublicOpinonComponent,
+    MediaComponent,
+    WavyComponent,
+    ScoreComponent,
+    AstuteComponent,
+    MeComponent
     
    
   ],

@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 .tags-box {
-  margin-right: 121px;
+  margin-left: 121px;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -16,6 +16,7 @@
 
 .tagline {
   @include gs.h4;
+  margin-left: 121px;
   margin-bottom: 20px;
   justify-self: center;
   display: flex;
@@ -25,10 +26,9 @@
   background-image: url("../../../assets/images/general/Background.svg");
   background-repeat: no-repeat;
   width: 100%;
-  object-fit: cover;
-
+  background-size: cover;
   min-height: 450px;
-  padding-left: 121px;
+  //padding-left: 121px;
   padding-top: 68px;
 }
 

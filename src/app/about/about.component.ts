@@ -12,8 +12,4 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
   }
 
- checkAnswer(){
-   var answer= ((document.getElementById('answerId') as HTMLInputElement).value);
-   console.log(answer);
- }
 }
