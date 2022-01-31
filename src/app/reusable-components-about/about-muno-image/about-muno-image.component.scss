@@ -1,0 +1,17 @@
+@use "../../general-styles/" as gs;
+
+.about-image-box {
+  width: 750px;
+  height: 401px;
+  object-fit: cover;
+  //margin-top: -198px;
+}
+
+@media (max-width: gs.$tablet) {
+  .about-image-box {
+    //margin-top: -135px;
+    height: 395px;
+    width: 395px;
+    object-fit: scale-down;
+  }
+}
