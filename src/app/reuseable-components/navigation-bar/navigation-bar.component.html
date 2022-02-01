@@ -47,22 +47,19 @@
 
       <!--main menu-->
       <mat-toolbar-row class="main-menu">
-        <app-logo></app-logo>
-        <span class="space-between"></span>
-
-        <a class="menu-link" routerLink="">Munozovepi Gwata</a>
+        <span class="logo-link">
+          <app-logo></app-logo>
+        </span>
 
         <button
-          class="button-container"
+          class="button-container button"
           type="button"
           aria-label="Toggle sidenav"
           mat-icon-button
           (click)="drawer.toggle()"
           *ngIf="isHandset$ | async"
         >
-          <mat-icon class="button" aria-label="Side nav toggle icon"
-            >menu</mat-icon
-          >
+          M
         </button>
       </mat-toolbar-row>
     </mat-toolbar>

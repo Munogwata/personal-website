@@ -32,13 +32,13 @@
 .main-menu {
   width: 100%;
   padding-top: 7px;
-  padding-bottom: 7px;
+  padding-bottom: 12px;
   padding-left: 121px;
   padding-right: 121px;
   height: auto;
   display: flex;
-  justify-content: center;
-  justify-items: center;
+  justify-content: flex-start;
+  justify-items: flex-start;
   align-items: center;
   align-content: center;
   height: auto;
@@ -56,7 +56,9 @@
 .button {
   background-color: none;
   color: gs.$white;
-  width: 45px;
+  width: 55px;
+  height: 55px;
+  @include gs.h4;
 
   &-container {
     display: flex;
@@ -76,8 +78,8 @@
   background-size: cover;
 }
 
-@media (max-width: gs.$mobile) {
-  .menu-link {
+@media (max-width: gs.$tablet) {
+  .logo-link {
     display: none;
   }
 }
