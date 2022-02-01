@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WavyComponent implements OnInit {
 
-  showMe:boolean=false
+  showMe:boolean=true
   
  
 

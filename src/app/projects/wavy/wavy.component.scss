@@ -94,7 +94,7 @@
   color: gs.$white;
 }
 
-@media (max-width: gs.$mobile) {
+@media (max-width: gs.$tablet) {
   .page-container {
     flex-direction: column;
   }

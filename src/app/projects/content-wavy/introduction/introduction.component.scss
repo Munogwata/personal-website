@@ -1,0 +1,34 @@
+@use "../../../component-styles/projects-contact-format" as pt;
+
+@use "../../../general-styles/" as gs;
+
+.content-paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: gs.$bold;
+  @include gs.s1;
+  margin-bottom: 7px;
+  display: flex;
+}
+
+.sub-title-format {
+  @include gs.s1;
+}
+
+.space {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.final-block-space {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.bold-sub-heading {
+  font-weight: gs.$bold;
+}
