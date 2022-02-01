@@ -3,6 +3,7 @@
   <span class="navigation-column">
     <span class="project-number"> 01</span>
     <span class="project-heading"> Should I Invest? </span>
+    <!--Introduction Tab-->
     <span class="tab-label-box">
       <button
         class="tab-label"
@@ -13,11 +14,22 @@
       </button>
     </span>
     <span class="tab-heading"> User Experience Case Study </span>
-    <span class="tab-label">
-      <button (click)="toggleButton()">Problem Statement</button>
+
+    <!--Problem Statement Tab-->
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button
+          (click)="toggleProblemStatement()"
+          class="tab-label"
+          [ngClass]="{ problemstatement: selectedProblemStatement == true }"
+        >
+          Problem Statement
+        </button>
+      </span>
     </span>
+
     <span class="tab-label">
-      <button (click)="toggleButton()">The Objectives of Wavy</button>
+      <button>The Objectives of Wavy</button>
     </span>
   </span>
 
@@ -27,6 +39,9 @@
     <span class="project-heading-false"> Should I Invest? </span>
     <span *ngIf="showMe" class="content">
       <app-introduction> </app-introduction>
+    </span>
+    <span *ngIf="selectedProblemStatement" class="content">
+      <app-problem-statement></app-problem-statement>
     </span>
   </span>
 </span>

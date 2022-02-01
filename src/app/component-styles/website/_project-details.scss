@@ -1,6 +1,4 @@
-@use "../../../component-styles/projects-contact-format" as pt;
-
-@use "../../../general-styles/" as gs;
+@use "../../general-styles/" as gs;
 
 .content-paragraph {
   display: flex;
@@ -32,6 +30,10 @@
 
 .bold-sub-heading {
   font-weight: gs.$bold;
+}
+
+.quote {
+  font-style: italic;
 }
 
 .body {

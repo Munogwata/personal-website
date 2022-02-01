@@ -7,14 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WavyComponent implements OnInit {
 
-  showMe:boolean=true
-  
+  showMe:boolean=true;
+
+  selectedProblemStatement:boolean =false;
  
 
   ngOnInit(): void {
   }
 
   toggleButton(){
+    this.showMe =! this.showMe
+    this.selectedProblemStatement =! this.selectedProblemStatement
+  }
+
+  toggleProblemStatement(){
+    this.selectedProblemStatement =! this.selectedProblemStatement
     this.showMe =! this.showMe
   }
 

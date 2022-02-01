@@ -29,7 +29,21 @@
   align-content: flex-start;
 }
 
+.tab-heading {
+  @include gs.h6;
+  text-decoration: underline;
+  font-weight: gs.$bold;
+}
+
 .active {
+  color: gs.$dark-lavender;
+}
+
+.problemstatement {
+  color: gs.$dark-lavender;
+}
+
+.problem-statement {
   color: gs.$dark-lavender;
 }
 
@@ -44,6 +58,7 @@
   justify-content: flex-start;
   justify-items: flex-start;
   padding: 5px;
+  min-height: 100%;
 }
 
 .project-number {
