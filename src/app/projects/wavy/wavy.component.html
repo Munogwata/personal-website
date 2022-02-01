@@ -1,1 +1,11 @@
-<p>wavy works!</p>
+<span class="page-container">
+  <!--column 1-->
+  <span class="navigation">
+    <button (click)="toggleButton()">intro</button>
+  </span>
+
+  <!--column 2-->
+  <span class="project-content">
+    <span *ngIf="showMe">opened</span>
+  </span>
+</span>

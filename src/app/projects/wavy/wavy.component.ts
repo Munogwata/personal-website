@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WavyComponent implements OnInit {
 
-  constructor() { }
+  showMe:boolean=false
+  
+ 
 
   ngOnInit(): void {
+  }
+
+  toggleButton(){
+    this.showMe =! this.showMe
   }
 
 }
