@@ -51,15 +51,8 @@
           <app-logo></app-logo>
         </span>
 
-        <button
-          class="button-container button"
-          type="button"
-          aria-label="Toggle sidenav"
-          mat-icon-button
-          (click)="drawer.toggle()"
-          *ngIf="isHandset$ | async"
-        >
-          M
+        <button class="button-circle" type="button" *ngIf="isHandset$ | async">
+          <a class="logo-link-b" routerLink="">M</a>
         </button>
       </mat-toolbar-row>
     </mat-toolbar>

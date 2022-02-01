@@ -37,6 +37,17 @@ import { WavyComponent } from './projects/wavy/wavy.component';
 import { ScoreComponent } from './projects/score/score.component';
 import { AstuteComponent } from './projects/astute/astute.component';
 import { MeComponent } from './projects/me/me.component';
+import { IntroductionComponent } from './projects/content-wavy/introduction/introduction.component';
+import { ProblemStatementComponent } from './projects/content-wavy/problem-statement/problem-statement.component';
+import { ObjectivesWavyComponent } from './projects/content-wavy/objectives-wavy/objectives-wavy.component';
+import { ImpactComponent } from './projects/content-wavy/impact/impact.component';
+import { WavyOpportunityComponent } from './projects/content-wavy/wavy-opportunity/wavy-opportunity.component';
+import { MarketComparsionComponent } from './projects/content-wavy/market-comparsion/market-comparsion.component';
+import { UserResearchComponent } from './projects/content-wavy/user-research/user-research.component';
+import { UserBasedGoalsComponent } from './projects/content-wavy/user-based-goals/user-based-goals.component';
+import { MainFindingsComponent } from './projects/content-wavy/main-findings/main-findings.component';
+import { ScopesConstraintsComponent } from './projects/content-wavy/scopes-constraints/scopes-constraints.component';
+import { DesignPrinciplesComponent } from './projects/content-wavy/design-principles/design-principles.component';
 
 
 
@@ -68,7 +79,18 @@ import { MeComponent } from './projects/me/me.component';
     WavyComponent,
     ScoreComponent,
     AstuteComponent,
-    MeComponent
+    MeComponent,
+    IntroductionComponent,
+    ProblemStatementComponent,
+    ObjectivesWavyComponent,
+    ImpactComponent,
+    WavyOpportunityComponent,
+    MarketComparsionComponent,
+    UserResearchComponent,
+    UserBasedGoalsComponent,
+    MainFindingsComponent,
+    ScopesConstraintsComponent,
+    DesignPrinciplesComponent
     
    
   ],

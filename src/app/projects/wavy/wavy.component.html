@@ -3,8 +3,14 @@
   <span class="navigation-column">
     <span class="project-number"> 01</span>
     <span class="project-heading"> Should I Invest? </span>
-    <span class="tab-label">
-      <button (click)="toggleButton()">Introduction</button>
+    <span class="tab-label-box">
+      <button
+        class="tab-label"
+        (click)="toggleButton()"
+        [ngClass]="{ active: showMe == true }"
+      >
+        Introduction
+      </button>
     </span>
     <span class="tab-heading"> User Experience Case Study </span>
     <span class="tab-label">
@@ -17,6 +23,8 @@
 
   <!--column 2-->
   <span class="project-content">
-    <span *ngIf="showMe">opened</span>
+    <span class="project-number-false"> 01</span>
+    <span class="project-heading-false"> Should I Invest? </span>
+    <span *ngIf="showMe" class="content"></span>
   </span>
 </span>
