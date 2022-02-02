@@ -3,6 +3,7 @@
   <span class="navigation-column">
     <span class="project-number"> 01</span>
     <span class="project-heading"> Should I Invest? </span>
+
     <!--Introduction Tab-->
     <span class="tab-label-box">
       <button
@@ -13,7 +14,9 @@
         Introduction
       </button>
     </span>
-    <span class="tab-heading"> User Experience Case Study </span>
+    <span class="tab-label-box">
+      <span class="tab-heading"> User Experience Case Study </span>
+    </span>
 
     <!--Problem Statement Tab-->
     <span class="tab-label-box">
@@ -28,12 +31,22 @@
       </span>
     </span>
 
-    <span class="tab-label">
-      <button>The Objectives of Wavy</button>
+    <!--Objectives Tab-->
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button
+          (click)="toggleObjectives()"
+          class="tab-label"
+          [ngClass]="{ objectives: selectedObjectives == true }"
+        >
+          The Objectives of Wavy
+        </button>
+      </span>
     </span>
   </span>
 
   <!--column 2-->
+
   <span class="project-content">
     <span class="project-number-false"> 01</span>
     <span class="project-heading-false"> Should I Invest? </span>

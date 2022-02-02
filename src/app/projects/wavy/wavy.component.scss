@@ -3,20 +3,23 @@
 .page-container {
   display: flex;
   width: 100%;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: space-between;
   align-content: flex-start;
+  min-height: 100%;
+  //flex-direction: row;
 }
 
 .tab-label {
   @include gs.h5;
-  background-color: white;
+
   color: gs.$black;
   border: none;
+  background-color: gs.$white;
 }
 
 .navigation-column {
-  width: fit-content;
+  width: 400px;
   padding: 5px;
   display: flex;
   background-color: gs.$white;
@@ -33,6 +36,7 @@
   @include gs.h6;
   text-decoration: underline;
   font-weight: gs.$bold;
+  width: 400px;
 }
 
 .active {
@@ -48,9 +52,7 @@
 }
 
 .project-content {
-  width: fit-content;
   margin-top: 100px;
-
   display: flex;
   flex-direction: column;
   align-content: flex-start;
@@ -58,7 +60,6 @@
   justify-content: flex-start;
   justify-items: flex-start;
   padding: 5px;
-  min-height: 100%;
 }
 
 .project-number {
@@ -90,7 +91,7 @@
 }
 
 .tab-label-box {
-  width: 100%;
+  width: 400px;
   display: flex;
   justify-items: flex-end;
   justify-content: flex-end;
@@ -111,7 +112,10 @@
 
 @media (max-width: gs.$tablet) {
   .page-container {
+    display: flex;
     flex-direction: column;
+    width: 100%;
+    min-height: 100%;
   }
 
   .project-number-false {
@@ -124,6 +128,7 @@
 
   .navigation-column {
     margin-left: 20px;
+    width: 100%;
   }
 
   .content {

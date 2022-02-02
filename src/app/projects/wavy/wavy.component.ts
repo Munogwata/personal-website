@@ -10,6 +10,8 @@ export class WavyComponent implements OnInit {
   showMe:boolean=true;
 
   selectedProblemStatement:boolean =false;
+
+  selectedObjectives:boolean=false;
  
 
   ngOnInit(): void {
@@ -18,9 +20,17 @@ export class WavyComponent implements OnInit {
   toggleButton(){
     this.showMe =! this.showMe
     this.selectedProblemStatement =! this.selectedProblemStatement
+    this.selectedObjectives =! this.selectedObjectives;
   }
 
   toggleProblemStatement(){
+    this.selectedProblemStatement =! this.selectedProblemStatement
+    this.showMe =! this.showMe
+    this.selectedObjectives =! this.selectedObjectives;
+  }
+
+  toggleObjectives(){
+    this.selectedObjectives =! this.selectedObjectives;
     this.selectedProblemStatement =! this.selectedProblemStatement
     this.showMe =! this.showMe
   }
