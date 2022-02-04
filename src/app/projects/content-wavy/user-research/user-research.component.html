@@ -1,1 +1,172 @@
-<p>user-research works!</p>
+<span class="content-paragraph">
+  <span class="body">
+    Through the user research, we identified the types of potential users and
+    their respective challenges. We analysed the categories of users, and their
+    specific needs if they are to start investing with Wavy. The objectives that
+    Wavy has for each category are concise.
+    <br />
+    <br />
+
+    <span class="highlight">
+      The categories of the users have been curated from years of data that has
+      been reviewed and considered from my work with Kukura Capital, which is
+      one of the top personal finance platforms in South Africa.
+    </span>
+
+    Kukura Capital assists people with the management of their personal
+    finances. The categories highlight the main users for Wavy. A user can,
+    however, be a combination of the identified categories.
+    <br />
+    <br />
+  </span>
+
+  <span class="bold-sub-heading body"> The Beginner </span>
+
+  <span class="body">
+    The Beginner is a person who wishes to start investing but does not have a
+    lot of knowledge or experience in investing in the capital markets. A
+    beginner is the most vulnerable user of Wavy. This is because they can be
+    very susceptible in the financial sector. Due to their lack of experience in
+    investing they, a) rely very heavily on financial advice and, b) can be more
+    inclined to make emotional and inconsistent investing decisions as a result
+    of being too reactive to the fluctuations that may occur in their investment
+    portfolio. This may result in prematurely selling and buying investments,
+    and ultimately missing out on the opportunities that are presented by the
+    financial markets.
+
+    <br />
+    <br />
+    The Beginner will represent a huge base of the users of Wavy, and therefore,
+    Wavy is designed to prioritise their needs. However, Wavy will be going the
+    extra mile by also focusing on developing them into an Experienced or
+    Household investor.
+    <br />
+    <br />
+  </span>
+
+  <!--beginner investor-->
+  <span class="tabs-container">
+    <span class="body">
+      <button type="button" class="project-tab" (click)="toggleBeginner()">
+        More insights on the Beginner Investor.
+      </button>
+    </span>
+  </span>
+
+  <!--more information on the beginner-->
+
+  <span *ngIf="this.selectedBeginner" class="body">
+    <span class="body"> The main pain-points of the Beginner: </span>
+
+    <br />
+
+    <span class="body">
+      <ul>
+        <li>
+          A very limited understanding of the financial markets, which often
+          translates poorly uninformed financial decisions;
+        </li>
+
+        <li>
+          An over dependency on financial advice due to a limited understanding
+          of the financial markets;
+        </li>
+
+        <li>
+          Convoluted use of financial terms and financial indicators easily
+          overwhelms the user and makes the process of investing inaccessible;
+        </li>
+
+        <li>
+          Lack of experience of the capital markets which leads to fear in
+          investing; and
+        </li>
+        <li>
+          A strong dependency on credible guidance and assistance through the
+          initial process of investing, withdrawing funds, and building
+          investment portfolios.
+        </li>
+      </ul>
+    </span>
+    <br />
+
+    <span class="body"> The needs of the Beginner: </span>
+
+    <br />
+
+    <span class="body">
+      <ul>
+        <li>
+          Their investment options narrowed down in accordance to their needs,
+          so that they are not overwhelmed and rushed into investment decisions;
+        </li>
+        <li>
+          The investing pace of the Beginner needs to be managed and monitored
+          to prevent bad investment decisions;
+        </li>
+        <li>
+          Their financial needs will have to be clearly identified in order to
+          find products that are compatible; and
+        </li>
+        <li>
+          Simple language needs to be used to give them access to making
+          financial decisions.
+        </li>
+      </ul>
+    </span>
+    <br />
+
+    <span class="body"> Wavy’s objectives for the Beginner: </span>
+
+    <span class="body">
+      <ul>
+        <li>
+          Wavy wishes to develop the user’s understanding of the capital markets
+          and how to navigate these markets for the purposes of investing;
+        </li>
+        <li>
+          Wavy wants to build the confidence of the Beginner by helping them to
+          build the necessary financial habits to maintain, and grow their
+          personal finances;
+        </li>
+        <li>
+          In growing the confidence of a Beginner, Wavy aims that such users
+          will not be susceptible to wrong financial advice. Users should be
+          able to analyse any financial products advertised to them; and
+        </li>
+        <li>
+          Wavy hopes that the Beginner will be interested in their continuous
+          growth and development as an investor, such that they evolve into a
+          Learner and an Experienced Investor.
+        </li>
+      </ul>
+    </span>
+
+    <!--done with the beginner-->
+  </span>
+
+  <!--learner investor-->
+  <span class="bold-sub-heading body"> The Learner </span>
+
+  <span class="body">
+    The Learner is a user who is committed to their continuous development as an
+    investor. They are always eager to deepen their understanding of the capital
+    markets and investing in such markets. These users want to have every
+    possible tool in the form of knowledge that can give them all the benefits
+    when building investment portfolios.
+    <br />
+    <br />
+  </span>
+
+  <!--investor button-->
+
+  <span class="tabs-container">
+    <span class="body">
+      <button type="button" class="project-tab" (click)="toggleLearner()">
+        More insights on the Beginner Investor.
+      </button>
+    </span>
+  </span>
+
+  <span *ngIf="this.selectedLearner" class="body"> hekko working </span>
+</span>

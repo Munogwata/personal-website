@@ -1,1 +1,336 @@
-<p>market-comparsion works!</p>
+<span class="content-paragraph">
+  <span class="body">
+    The market need for a product such as Wavy can be further examined when
+    comparing it too “similar” or “competing” products on the market. There are
+    some financial technology (“fintech”) applications that are aimed at easing
+    the process of investing in listed financial products for consumers.
+    <span class="highlight">
+      Unlike Wavy, these products are not designed to assist users with
+      selecting investments that are compatible with their financial goals,
+      whilst simultaneously aiding the development of their financial education.
+    </span>
+
+    <br />
+    <br />
+    <span class="body">
+      Local Fintech applications with an investing focus (outside of the
+      offerings provided by South African banks).
+    </span>
+    <br />
+    <br />
+
+    <!--easy equities button-->
+    <span class="tabs-container">
+      <span class="body">
+        <button
+          [ngClass]="{ ee: selectedEE == true }"
+          type="button"
+          class="project-tab"
+          (click)="toggleEE()"
+        >
+          Easy Equities
+        </button>
+      </span>
+      <span *ngIf="selectedEE" class="button-body">
+        <br />
+        Easy Equities is perhaps the most recognisable platform in South Africa
+        that is designed to make investing in the capital markets easier for
+        consumers. Easy Equities has undeniably succeeded in making the costs
+        and overall process for investing tremendously easy. Users can start
+        investing with a small amount of cash, and at low costs. It has neatly
+        set up user accounts so that they can invest in the local capital or
+        international markets. It also gives the users a tax free savings
+        account that they can utilise whilst investing and building their
+        portfolio.
+        <br />
+        <br />
+        Easy Equities was very evolutional in bringing the capital markets to
+        the people by removing a lot of barriers to entry, and this has been
+        acknowledged by many South Africans, who have awarded the Easy Equities
+        platform with high accolade such as MTN App of the Year.
+        <br />
+        <br />
+        Easy Equity excelled in what they aimed to do and that was to give
+        people easy access to invest in the capital markets. They have made the
+        onboarding process much easier and user friendly, however, they do not
+        address the other barrier of entry to the capital markets, financial
+        literacy.
+        <span class="highlight"
+          >Without any financial literacy consumers will not have the motivation
+          to create an Easy Equites’ account in the first place.
+          <br />
+          <br />
+          This is why Wavy prioritises financial education as an important
+          factor for sustained financial inclusion. Wavy wants to give people
+          the confidence and guidance to sustain their investing in the capital
+          markets and choose financial products that are compatible with their
+          financial needs and circumstances.
+          <br />
+          <br />
+        </span>
+      </span>
+
+      <!--Franc button-->
+      <span class="tabs-container">
+        <span class="body">
+          <button
+            [ngClass]="{ fc: selectedFC == true }"
+            type="button"
+            class="project-tab"
+            (click)="toggleFC()"
+          >
+            Franc
+          </button>
+        </span>
+      </span>
+
+      <span *ngIf="selectedFC" c class="button-body">
+        <br />
+        In part it can be argued that this is an objective that Franc tries to
+        accomplish. Franc is a platform that tries to facilitate the investment
+        decision process for its users on the basis of assessing the user’s
+        financial circumstances and financial objectives.
+
+        <br />
+        <br />
+        Franc asks the user a series of questions and based on their response
+        will recommend a financial product that they believe to be most
+        compatible with the users profile. It also tries to manage the
+        expectations of the user. Franc also has the Easy Equity offering, as it
+        gives the user easy access to invest in financial products. Furthermore,
+        Franc’s contributions in making the capital markets accessible have won
+        it similar accolades to that of Easy Equities at the MTN App Awards.
+        <br />
+        <br />
+        <span class="highlight">
+          Where Franc can be viewed as more comparable to Wavy, it still has
+          three fundamental limitations that Wavy does not.
+        </span>
+
+        <br />
+        <br />
+        Firstly, the financial product offering of Franc is limited to a fixed
+        range of financial products. This undoubtedly constraints the options
+        and potential earnings for the users. In their defence it can be argued
+        that Franc, is purely for beginner investors and, therefore, the
+        application is not trying not to overwhelm its users with too many
+        investment options. However, this arguments exposes the second
+        limitation of Franc. Franc is not developed to advance the user’s
+        understanding of the financial markets, and even if where the user
+        develops their understanding of the financial markets Franc is not
+        adaptable to meet the needs of a more advanced user. The final
+        limitation of Franc is that it limits the user to having one type of
+        portfolio, and not multiple portfolios that cater to the different
+        investing objectives.
+        <br />
+        <br />
+        Wavy does not share any of Franc’s limitations. Wavy is designed to give
+        the user access to any publicly listed financial product and does not
+        limit the financial product range or scope in this regard. Furthermore,
+        Wavy is designed to build the financial literacy of the user, and assist
+        them in developing their investor confidence to make well informed
+        financial decisions that are compatible with their financial
+        circumstances and objectives. Finally, Wavy is designed to grow with the
+        user and meet their evolving needs as the user develops and gains a
+        deeper understanding of the financial markets.
+        <br />
+        <br />
+      </span>
+
+      <!--stash button-->
+      <span class="tabs-container">
+        <span class="body">
+          <button
+            [ngClass]="{ sh: selectedSH == true }"
+            type="button"
+            class="project-tab"
+            (click)="toggleSH()"
+          >
+            Stash
+          </button>
+        </span>
+      </span>
+
+      <span class="button-body" *ngIf="selectedSH">
+        Stash has quite an interesting offering compared to the above considered
+        products. Stash is designed to get users involved in the capital
+        markets, by investing as little as their spare change into the markets.
+        The fundamental objective of Stash is to get its user involved in the
+        capital markets, and show that even the smallest investment can go a
+        long way. The investments are made into tax free saving compatible
+        financial products. Stash allows users to invest in a limited scope of
+        financial products.
+        <br />
+        <br />
+        It is hard to levy criticism on the clear limitation of Stash which
+        daily mirror that of Franc, because it is quite clear that Stash is not
+        prioritising any other objective, than to get the user involved in
+        investing. Stash gets its users investing in the capital markets with
+        ease. That said, Stash is poorly ranked by majority of its users for
+        inefficiency within the application.
+        <br />
+        <br />
+        The primary complaint is that Stash has a delayed verification process,
+        which hinders its objective of easy entering in the financial markets.
+        Also several of the user feedback is not satisfied with the withdrawal
+        process from the product.
+        <br />
+        <br />
+        The process on the investments needs to be well executed. Financial
+        services credibility is a key asset to retain and gain users.
+        <br />
+        <br />
+        The above listed platforms, Easy Equities, Franc and Stash are not new
+        innovations within the fintech space, as they in many ways emulate
+        already successful products that had huge and rapid success in other
+        international markets.
+        <br />
+        <br />
+      </span>
+
+      <span class="body">
+        International Fintech applications with an investing focus (outside of
+        the offerings provided by banks).
+        <br />
+        <br />
+      </span>
+
+      <span class="tabs-container">
+        <span class="body">
+          <button
+            [ngClass]="{ rd: selectedRD == true }"
+            type="button"
+            class="project-tab"
+            (click)="toggleRD()"
+          >
+            Robinhood
+          </button>
+        </span>
+      </span>
+
+      <span *ngIf="selectedRD" class="button-body">
+        Robinhood developed a range of services, but our focus is the investing
+        platform that they offer their users. Robinhood allows its users easy
+        entry in the capital markets by removing many of the traditional
+        barriers to entry. It allows users to buy and sell a vast option of
+        securities, whilst also tracking the performance of their portfolios.
+        Robinhood has a wide range of investing products and allows its users to
+        perform more complex transactions that often cannot be carried out by
+        the other mentioned platforms in this study. For example Easy Equities
+        does not allow its users to execute short selling investment strategies,
+        while Robinhood does.
+        <br />
+        <br />
+        Robinhood also allows its users to do active trading through the
+        platform and this is not a feature that Wavy plans to adopt. Robinhood
+        gained a lot of popularity for how it easily allows a user to start
+        investing at low costs and limited paperwork. This has proven to be a
+        double edged sword in certain circumstances. A lot of criticism has been
+        levied at Robinhood for allowing users to make certain investments that
+        were irresponsible and reckless. Robinhood has also been accused of
+        gamifying investing, this has a negative effect and impact on the
+        perception and reputation investing. This is important to note and
+        consider whilst designing and developing Wavy, as Wavy wants to
+        strengthen the credibility, understandability and accountability of the
+        financial sector, not compromise it.
+        <br />
+        <br />
+
+        Robinhood highlights the importance of embedding the necessary guards in
+        the product through the design in order to prevent reckless investing
+        that could jeopardise the reputation of the product and the financial
+        sector.
+        <br />
+        <br />
+      </span>
+
+      <!--stash usa-->
+      <span class="tabs-container">
+        <span class="body">
+          <button
+            [ngClass]="{ shu: selectedSHU == true }"
+            type="button"
+            class="project-tab"
+            (click)="toggleSHU()"
+          >
+            Stash - USA
+          </button>
+        </span>
+      </span>
+
+      <span *ngIf="selectedSHU" class="button-body">
+        Another Stash app, with the same name and similar use as the above
+        mentioned Stash. This Stash however does not have a limited investment
+        offering and has gained huge popularity in North America.
+        <br />
+        <br />
+        Stash is aimed at supporting micro-investing. This is the main focus of
+        the app and therefore it does not place any emphasis on teaching the
+        user about investing in the financial markets. It has the same
+        limitations as Stash and Franc in this regard. Just like Franc and Stash
+        it focuses on the beginner investor and is not designed to adapt to the
+        users developing understanding of the financial markets.
+        <br />
+        <br />
+      </span>
+
+      <!--acorns-->
+      <span class="tabs-container">
+        <span class="body">
+          <button
+            [ngClass]="{ as: selectedAS == true }"
+            type="button"
+            class="project-tab"
+            (click)="toggleAS()"
+          >
+            Acorns
+          </button>
+        </span>
+      </span>
+
+      <span *ngIf="selectedAS" class="button-body">
+        Acorns is a high breed between Stash and Franc as we know it in South
+        Africa. Acorns is a micro-investing app that like Stash allows users to
+        invest as little as their spare change into the financial markets. In
+        Acorns the investment is in one of five portfolios. This product
+        offering is more than what Franc has, but this still limits the user.
+        <br />
+        <br />
+        The argument for this limited offering is to prevent the user from
+        becoming overwhelmed with the huge volume of investment options
+        <br />
+        <br />
+      </span>
+
+      <span class="body bold-sub-heading">
+        Main takeaway from the comparative and competitive market research:
+        <br /><br />
+      </span>
+
+      <span class="body">
+        <ol type="1">
+          <li>
+            A common theme with all the products that we have examined is that
+            they are not designed with the user growth in mind, primarily
+            because the product is not prioritising the active development of
+            the users financial education. Wavy aims to be a flexible product
+            that grows with the user’s understanding of the capital markets.
+          </li>
+
+          <li>
+            The products on the market have considered how to mitigate
+            overwhelming their user from the multiple investment products. This
+            is done either by manually limiting the range of the product
+            offering, or by using the design of the interface to serve as an
+            intuitive filter that aids the users in their investment selection
+            process.
+          </li>
+        </ol>
+        <br />
+        <br />
+      </span>
+
+      <!--end of column2-->
+    </span>
+  </span>
+</span>

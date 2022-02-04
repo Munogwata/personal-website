@@ -1,0 +1,7 @@
+@use "../../../general-styles/" as gs;
+
+@use "../../../component-styles/website/project-details" as ps;
+
+.bold-sub-heading {
+  font-weight: gs.$bold;
+}

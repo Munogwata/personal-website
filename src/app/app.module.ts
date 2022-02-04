@@ -48,6 +48,10 @@ import { UserBasedGoalsComponent } from './projects/content-wavy/user-based-goal
 import { MainFindingsComponent } from './projects/content-wavy/main-findings/main-findings.component';
 import { ScopesConstraintsComponent } from './projects/content-wavy/scopes-constraints/scopes-constraints.component';
 import { DesignPrinciplesComponent } from './projects/content-wavy/design-principles/design-principles.component';
+import { OpportunityComponent } from './projects/content-wavy/opportunity/opportunity.component';
+import { ConclusionComponent } from './projects/content-wavy/conclusion/conclusion.component';
+import { DesignReqComponent } from './projects/content-wavy/design-req/design-req.component';
+import { DesignProcComponent } from './projects/content-wavy/design-proc/design-proc.component';
 
 
 
@@ -90,7 +94,11 @@ import { DesignPrinciplesComponent } from './projects/content-wavy/design-princi
     UserBasedGoalsComponent,
     MainFindingsComponent,
     ScopesConstraintsComponent,
-    DesignPrinciplesComponent
+    DesignPrinciplesComponent,
+    OpportunityComponent,
+    ConclusionComponent,
+    DesignReqComponent,
+    DesignProcComponent
     
    
   ],

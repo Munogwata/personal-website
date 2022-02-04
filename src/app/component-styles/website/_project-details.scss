@@ -7,6 +7,11 @@
   height: fit-content;
 }
 
+.tabs-container {
+  flex-direction: column;
+  display: flex;
+}
+
 .bold {
   font-weight: gs.$bold;
   @include gs.s1;
@@ -16,6 +21,7 @@
 
 .sub-title-format {
   @include gs.s1;
+  margin-bottom: 5px;
 }
 
 .space {
@@ -28,8 +34,50 @@
   margin-bottom: 30px;
 }
 
+.project-tab {
+  border: none;
+  background-color: gs.$white;
+  @include gs.s2;
+  color: gs.$dark-lavender;
+  display: flex;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.project-tab-small {
+  border: none;
+  background-color: gs.$white;
+  @include gs.b2;
+  color: gs.$dark-lavender;
+  display: flex;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.button-body {
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  flex-direction: column;
+}
+
 .bold-sub-heading {
   font-weight: gs.$bold;
+  @include gs.b1;
+  margin-bottom: 5px;
+}
+
+br {
+  line-height: 15px;
+  display: block;
 }
 
 .quote {
@@ -39,6 +87,10 @@
 .body {
   margin-right: 121px;
   @include gs.b2;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .highlight {

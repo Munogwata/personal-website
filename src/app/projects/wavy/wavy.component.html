@@ -43,18 +43,198 @@
         </button>
       </span>
     </span>
+
+    <!--Wavy's Impact-->
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button
+          (click)="toggleImpact()"
+          class="tab-label"
+          [ngClass]="{ impact: selectedImpact == true }"
+        >
+          Wavy's Impact
+        </button>
+      </span>
+    </span>
+
+    <!--Market Opportunity for Wavy tab-->
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button
+          (click)="toggleOpportunity()"
+          class="tab-label"
+          [ngClass]="{ opportunity: selectedOpportunity == true }"
+        >
+          Market Opportunity for Wavy
+        </button>
+      </span>
+    </span>
+
+    <!--Comparative and Competative analysis tab-->
+
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button
+          (click)="toggleCompetition()"
+          class="tab-label"
+          [ngClass]="{ competition: selectedCompetition == true }"
+        >
+          Competitive Analysis
+        </button>
+      </span>
+    </span>
+
+    <!--User Research-->
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button
+          (click)="toggleResearch()"
+          class="tab-label"
+          [ngClass]="{ research: selectedResearch == true }"
+        >
+          User Research
+        </button>
+      </span>
+    </span>
+
+    <!--Findings-->
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button
+          (click)="toggleFindings()"
+          class="tab-label"
+          [ngClass]="{ findings: selectedFindings == true }"
+        >
+          Findings
+        </button>
+      </span>
+    </span>
+
+    <!--scopes and constraints-->
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button
+          (click)="toggleConstraints()"
+          class="tab-label"
+          [ngClass]="{ constraints: selectedConstraints == true }"
+        >
+          The Scope and Constraints
+        </button>
+      </span>
+    </span>
+
+    <!--Conclusion-->
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button
+          (click)="toggleConclusion()"
+          class="tab-label"
+          [ngClass]="{ conclusion: selectedConclusion == true }"
+        >
+          Conclusion
+        </button>
+      </span>
+    </span>
+
+    <!--next sub-heading-->
+    <span class="tab-label-box">
+      <span class="tab-heading"> User Interface Design </span>
+    </span>
+
+    <!--Design Principles-->
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button
+          (click)="toggleDesignPrinciples()"
+          class="tab-label"
+          [ngClass]="{ designprinciples: selectedDesignPrinciples == true }"
+        >
+          Design Principles
+        </button>
+      </span>
+    </span>
+
+    <!--Design Principles-->
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button
+          (click)="toggleDesignRequirements()"
+          class="tab-label"
+          [ngClass]="{ designrequirements: selectedDesignRequirements == true }"
+        >
+          Design Principle Requirements
+        </button>
+      </span>
+    </span>
+
+    <!--Design Process-->
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button
+          (click)="toggleDesignProcess()"
+          class="tab-label"
+          [ngClass]="{ designprocess: selectedDesignProcess == true }"
+        >
+          Design Process
+        </button>
+      </span>
+    </span>
+
+    <span class="final-block"> </span>
+    <!--end of the navigation menu-->
   </span>
 
-  <!--column 2-->
+  <!--column 2--><!--the project content-->
 
   <span class="project-content">
     <span class="project-number-false"> 01</span>
     <span class="project-heading-false"> Should I Invest? </span>
+    <!--introduction -->
     <span *ngIf="showMe" class="content">
       <app-introduction> </app-introduction>
     </span>
+
+    <!--problem statement-->
     <span *ngIf="selectedProblemStatement" class="content">
       <app-problem-statement></app-problem-statement>
+    </span>
+
+    <!--objectives-->
+    <span *ngIf="selectedObjectives" class="content">
+      <app-objectives-wavy> </app-objectives-wavy>
+    </span>
+
+    <!--impact-->
+    <span *ngIf="selectedImpact" class="content">
+      <app-impact></app-impact>
+    </span>
+
+    <!--opportunity-->
+    <span *ngIf="selectedOpportunity" class="content">
+      <app-opportunity></app-opportunity>
+    </span>
+
+    <!--competative-->
+    <span *ngIf="selectedCompetition" class="content">
+      <app-market-comparsion></app-market-comparsion>
+    </span>
+
+    <!--user research-->
+    <span *ngIf="selectedResearch" class="content">
+      <app-user-research></app-user-research>
+    </span>
+
+    <!--main findings-->
+    <span *ngIf="selectedFindings" class="content">
+      <app-main-findings></app-main-findings>
+    </span>
+
+    <!--scopes-->
+    <span *ngIf="selectedConstraints" class="content"> </span>
+
+    <!--conclusion-->
+    <span *ngIf="selectedConclusion" class="content">
+      <app-conclusion></app-conclusion>
     </span>
   </span>
 </span>
