@@ -3,8 +3,8 @@
 .content-paragraph {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: fit-content;
+  background-color: gs.$white;
 }
 
 .tabs-container {
@@ -44,7 +44,12 @@
   justify-items: flex-start;
   padding: 0;
   cursor: pointer;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+
+  &:hover {
+    color: gs.$soft-pink;
+    @include gs.h6;
+  }
 }
 
 .project-tab-small {

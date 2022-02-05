@@ -175,21 +175,29 @@
 
   .project-number-false {
     display: none;
+    visibility: hidden;
   }
 
   .project-heading-false {
     display: none;
+    visibility: hidden;
   }
 
   .navigation-column {
     margin-left: 20px;
+    margin-top: 50px;
   }
 
   .content {
+    margin-top: 0px;
     margin-left: 20px;
   }
 
   .project-content {
     max-width: 750px;
+  }
+
+  .final-block {
+    margin-bottom: 0px;
   }
 }

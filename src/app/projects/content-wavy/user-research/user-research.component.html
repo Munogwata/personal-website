@@ -146,7 +146,7 @@
   </span>
 
   <!--learner investor-->
-  <span class="bold-sub-heading body"> The Learner </span>
+  <span class="bold-sub-heading body"> The Learner Investor</span>
 
   <span class="body">
     The Learner is a user who is committed to their continuous development as an
@@ -158,15 +158,329 @@
     <br />
   </span>
 
-  <!--investor button-->
+  <!--more information about the learner-->
 
   <span class="tabs-container">
     <span class="body">
-      <button type="button" class="project-tab" (click)="toggleLearner()">
-        More insights on the Beginner Investor.
+      <button type="button" class="project-tab" (click)="toggleLearn()">
+        More insights on the Learner Investor.
       </button>
     </span>
   </span>
 
-  <span *ngIf="this.selectedLearner" class="body"> hekko working </span>
+  <span *ngIf="this.selectedLearn" class="body">
+    <span class="body"> The main paint points for the learner: </span>
+
+    <span class="body">
+      <ul>
+        <li>
+          Easily accessible information about the financial markets and
+          investing, this user wishes to learn more about investing, in a very
+          convenient way;
+        </li>
+        <li>
+          The information about investing needs to be designed in a format which
+          enables the user to naturally progress in their learning process; and
+        </li>
+        <li>
+          This user would like practical examples presented to them so that they
+          can have a realistic understanding of the utilisation of certain
+          financial and investment principals.
+        </li>
+      </ul>
+    </span>
+
+    <span class="body"> The needs of the learner: </span>
+
+    <span class="body">
+      <ul>
+        <li>
+          Easy access to skills development, as it pertains to selecting
+          investments from the capital markets and portfolio development.
+        </li>
+      </ul>
+    </span>
+
+    <span class="body"> The objectives of Wavy: </span>
+
+    <span class="body">
+      <ul>
+        <li>
+          Aid the Learner in their development as an investor by making learning
+          about the markets a convenient and exciting process. This can be done
+          by introducing a reward system; and
+        </li>
+        <li>
+          Make the learning component that Wavy has to offer attractive to all
+          users of the product because learning is the best guarantee to ensure
+          that the platform is effective to all its users.
+        </li>
+      </ul>
+    </span>
+  </span>
+
+  <!--the household content-->
+  <span class="bold-sub-heading body"> The Household Investor </span>
+
+  <span class="body">
+    This is the person who is allocated within their household or their social
+    group such as a stockvel, to manage the finances of the respective group.
+    This person already has an appreciation for basic finance principles and for
+    this reason wishes to further grow group finances through the capital
+    markets. They can be at any range of the spectrum ranging from Beginner or
+    an Experienced Investor as it relates to their experience as an investor in
+    the capital markets.
+    <br />
+    <br />
+    The characteristic that defines this group is that they are very observant
+    and prudent about financial decisions and approach investing with this sense
+    of responsibility and diligence.
+    <br />
+    <br />
+  </span>
+
+  <!--more information about the household investor-->
+  <span class="tabs-container">
+    <span class="body">
+      <button type="button" class="project-tab" (click)="toggleHousehold()">
+        More insights on the Household Investor.
+      </button>
+    </span>
+  </span>
+
+  <span *ngIf="this.selectedHousehold" class="body">
+    <span class="body"> The main pain points of the Household Investor: </span>
+    <span class="body">
+      <ul>
+        <li>
+          They do not get easy access to a comprehensive summary of the main
+          deciding factors about a financial product that will allow them to
+          make a confident informed decision;
+        </li>
+        <li>
+          Convoluted presentation of information as it relates to financial
+          products, whilst also simultaneously not readily providing critical
+          information;
+        </li>
+        <li>
+          Not enough readily accessible information pertaining to costs, risks
+          and other key metrics which they are used to, are readily available on
+          the investment products that they wish to invest in; and
+        </li>
+        <li>
+          Not enough platforms that effectively consolidate learning materials
+          necessary to effectively navigate investing in the capital markets.
+        </li>
+      </ul>
+    </span>
+
+    <span class="body"> The needs of the Household Investor: </span>
+    <span class="body">
+      <ul>
+        <li>
+          A credible feature within the platform that correctly shortlists and
+          filters the financial products that are most suitable for the user’s
+          needs.
+        </li>
+      </ul>
+    </span>
+
+    <span class="body">
+      The objectives of Wavy for the Household Investor:
+    </span>
+    <span class="body">
+      <ul>
+        <li>
+          Provide the user with recommendations of financial products that are
+          most compatible with their focus; and
+        </li>
+        <li>
+          Develop the user’s understanding of financial products and the capital
+          markets so that they are able to expand and fully optimise the
+          offerings of investing in the capital markets.
+        </li>
+      </ul>
+    </span>
+  </span>
+
+  <!--focused investor-->
+
+  <span class="bold-sub-heading body"> The Focused Investor </span>
+
+  <span class="body">
+    This investor is proceeding to invest with a particular goal or focus in
+    mind, an example could be investing purely for the purpose of retirement.
+    This user may have more than one specific focus, however, it is often
+    limited to one or two main objectives. Therefore this user wants to be
+    stirred towards financial products that are available in the capital markets
+    that are designed to specifically achieve their specific focus
+    <br />
+    <br />
+  </span>
+
+  <!--more information about the focused investor-->
+  <span class="tabs-container">
+    <span class="body">
+      <button type="button" class="project-tab" (click)="toggleFocus()">
+        More insights on the Focused Investor.
+      </button>
+    </span>
+  </span>
+
+  <span *ngIf="this.selectedFocus" class="body"> focused content</span>
+
+  <!--the experienced investor-->
+  <span class="bold-sub-heading body"> The Experienced Investor </span>
+
+  <span class="body">
+    The Experienced Investors arise as a result of one or two circumstances:
+
+    <ol type="1">
+      <li>They joined the platform as an Experienced Investor; or</li>
+      <li>
+        They developed into an Experienced Investor as the result of Wavy.
+      </li>
+    </ol>
+
+    In either circumstances, this user has obtained the critical knowledge to
+    make the necessary financial decisions whilst building their investment
+    portfolios. This is a benefit that Wavy would like to exploit so that it can
+    be used to the benefit of other users of the platform.
+    <br />
+    <br />
+  </span>
+
+  <!--more information about the experienced investor-->
+  <span class="tabs-container">
+    <span class="body">
+      <button type="button" class="project-tab" (click)="toggleExperience()">
+        More insights on the Experienced Investor.
+      </button>
+    </span>
+  </span>
+
+  <span *ngIf="this.selectedExperience" class="body">
+    <span class="body"> The objectives of the Experienced Investor: </span>
+    <span class="body">
+      <ul>
+        <li>
+          Affordable and easy access to make investments and manage investment
+          portfolios; and
+        </li>
+        <li>
+          Access to the necessary tools to perform more complex analysis on
+          financial products and investment portfolios.
+        </li>
+      </ul>
+    </span>
+
+    <span class="body"> The needs of the Experienced Investor: </span>
+    <span class="body">
+      <ul>
+        <li>
+          Capacity to carry out more complex investment strategies cost
+          effectively;
+        </li>
+        <li>
+          Transfer of existing portfolios in an efficient and easy way (in the
+          event that they have been manning their portfolio using another
+          platform); and
+        </li>
+        <li>
+          Efficiency on the investment process, particularly as it relates to
+          verification, deposits and withdrawals.
+        </li>
+      </ul>
+    </span>
+
+    <span class="body"> The objectives of Wavy for the Experienced User: </span>
+
+    <span class="body">
+      <ul>
+        <li>
+          Offer a smart platform that gives the user the necessary tools to
+          perform the financial analysis needed to make investment decisions;
+          and
+        </li>
+        <li>
+          Provide a platform that rivals competitors in efficiency as it
+          pertains to all the key steps within investing.
+        </li>
+      </ul>
+    </span>
+  </span>
+
+  <!--Bad Investor-->
+  <span class="bold-sub-heading body"> The Bad Investor </span>
+
+  <span class="body">
+    This user is a liability and by no means not the target market for Wavy.
+    This “investor” is only keen on making quick money from the markets. They
+    have no regard to develop their understanding of the capital markets, nor
+    have understanding of the associated risks with investing. This user does
+    exist and Wavy is designed to have the necessary mechanisms that act as a
+    deterrent for such users, as they are liability to themselves and can
+    further cause reputational risk for Wavy.
+    <br />
+    <br />
+  </span>
+
+  <span class="quote body">
+    [Note that the objective of the Bad Investor have been omitted because there
+    is no correlation that is been drawn between their objectives and the needs
+    we have identified for this type of user.]
+    <br />
+    <br />
+  </span>
+
+  <!--more information about the bad investor-->
+  <span class="tabs-container">
+    <span class="body">
+      <button type="button" class="project-tab" (click)="toggleBad()">
+        More insights on the Bad Investor.
+      </button>
+    </span>
+  </span>
+
+  <span *ngIf="this.selectedBad" class="body">
+    <span class="body"> The needs of a Bad Investor: </span>
+
+    <span class="body">
+      <ul>
+        <li>
+          They need to be restricted from making investment decisions that are
+          reckless through thorough pre-emptive warnings;
+        </li>
+        <li>
+          Their needs to be limit placed on volume and frequency of their
+          investing, as this may be poorly influenced by misinformed
+          expectations of investing in the capital markets; and
+        </li>
+        <li>
+          This user needs to be able to legally acknowledge accountability for
+          their investment decisions and that investing is associated with risk.
+        </li>
+      </ul>
+    </span>
+
+    <span class="body"> The objective of Wavy for the Bad Investor: </span>
+
+    <span class="body">
+      <ul>
+        <li>
+          Develop this user into a Learner investor and ideally further their
+          development so that they become an Experienced investor;
+        </li>
+        <li>Help them build good sustainable investing habits; and</li>
+        <li>
+          Assist them in building well thought out and sustainable investment
+          portfolios.
+        </li>
+      </ul>
+    </span>
+  </span>
+
+  <span class="final-block-space"></span>
+
+  <!--last span in the column-->
 </span>

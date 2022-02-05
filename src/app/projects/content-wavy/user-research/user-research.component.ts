@@ -1,3 +1,4 @@
+import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,71 +9,71 @@ import { Component, OnInit } from '@angular/core';
 export class UserResearchComponent implements OnInit {
 
 selectedBeginner:boolean =false;
-selectedLearner:boolean =false;
-selectedHousehold:boolean =false;
-selectedFocused: boolean =false;
-selectedExperienced:boolean =false;
-selectedBad:boolean =false;
+selectedLearn:boolean= false;
+selectedHousehold:boolean= false;
+selectedFocus:boolean=false;
+selectedExperience:boolean=false;
+selectedBad:boolean=false;
+
 
 
   ngOnInit(): void {
   }
 
 toggleBeginner(){
-  this.selectedBeginner =! this.selectedBeginner;
-  this.selectedBad = false;
-  this.selectedExperienced = false;
-  this.selectedFocused = false;
-  this.selectedHousehold = false;
-  this.selectedLearner = false;
+this.selectedBeginner =! this.selectedBeginner;
+this.selectedLearn = false;
+this.selectedExperience = false;
+this.selectedBad = false;
+this.selectedFocus = false;
+
 }
 
-toggleLearner(){
-  this.selectedLearner =! this.selectedLearner;
-  this.selectedBad = false;
-  this.selectedExperienced = false;
-  this.selectedFocused = false;
-  this.selectedHousehold = false;
-  this.selectedBeginner = false;
-}
 
+toggleLearn(){
+this.selectedLearn =! this.selectedLearn;
+this.selectedHousehold = false;
+this.selectedExperience = false;
+this.selectedBad = false;
+this.selectedFocus = false;
+}
 
 toggleHousehold(){
-  this.selectedHousehold=! this.selectedHousehold;
-  this.selectedBad = false;
-  this.selectedExperienced = false;
-  this.selectedFocused = false;
-  this.selectedLearner = false;
+this.selectedHousehold =! this.selectedHousehold;
+this.selectedLearn = false;
+this.selectedBeginner = false;
+this.selectedBad = false;
+this.selectedExperience = false;
+this.selectedFocus = false;
+}
+
+toggleFocus(){
+  this.selectedFocus =! this.selectedFocus;
+  this.selectedLearn = false;
+this.selectedBeginner = false;
+this.selectedBad = false;
+this.selectedExperience = false;
+this.selectedHousehold = false;
+
+}
+
+toggleExperience(){
+  this.selectedExperience =! this.selectedExperience;
+  this.selectedLearn = false;
   this.selectedBeginner = false;
-}
-
-toggleFocused(){
-
-  this.selectedFocused=! this.selectedFocused;
   this.selectedBad = false;
-  this.selectedExperienced = false;
+  this.selectedFocus = false;
   this.selectedHousehold = false;
-  this.selectedLearner = false;
-  this.selectedBeginner = false; 
-}
-
-toggleExperienced(){
-  this.selectedExperienced=! this.selectedExperienced;
-  this.selectedBad = false;
-  this.selectedFocused = false;
-  this.selectedHousehold= false;
-  this.selectedLearner = false;
-  this.selectedBeginner = false; 
 }
 
 toggleBad(){
-  this.selectedBad=! this.selectedBad;
-  this.selectedFocused = false;
-  this.selectedExperienced = false;
-  this.selectedHousehold = false;
-  this.selectedLearner = false;
-  this.selectedBeginner = false; 
-
+  this.selectedBad =! this.selectedBad;
+  this.selectedLearn = false;
+  this.selectedBeginner = false;
+  this.selectedExperience = false;
+  this.selectedFocus = false;
+  this.selectedHousehold = false
 }
+
 
 }
