@@ -24,14 +24,14 @@
   &-image {
     width: 406px;
     height: 232px;
-    background-color: grey;
     justify-self: center;
+    object-fit: contain;
   }
   &-label {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: greenyellow;
+
     justify-content: center;
     align-items: center;
   }

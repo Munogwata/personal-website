@@ -1,1 +1,16 @@
 @use "../../component-styles/home-page/small-cards" as ss;
+@use "../../general-styles/" as gs;
+
+.cover-image {
+  object-fit: contain;
+  width: 370px;
+  height: 580px;
+}
+
+@media (max-width: gs.$tablet) {
+  .cover-image {
+    object-fit: contain;
+    width: 325px;
+    height: 500px;
+  }
+}

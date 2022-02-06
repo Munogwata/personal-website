@@ -7,14 +7,14 @@ a {
 }
 
 .cover-image {
-  object-fit: fill;
+  object-fit: contain;
   width: 370px;
   height: 580px;
 }
 
 @media (max-width: gs.$tablet) {
   .cover-image {
-    object-fit: fill;
+    object-fit: contain;
     width: 325px;
     height: 500px;
   }
