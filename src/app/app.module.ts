@@ -52,6 +52,8 @@ import { OpportunityComponent } from './projects/content-wavy/opportunity/opport
 import { ConclusionComponent } from './projects/content-wavy/conclusion/conclusion.component';
 import { DesignReqComponent } from './projects/content-wavy/design-req/design-req.component';
 import { DesignProcComponent } from './projects/content-wavy/design-proc/design-proc.component';
+import { DesignDocumentsComponent } from './projects/content-wavy/design-documents/design-documents.component';
+import { WavyPrototypeComponent } from './projects/content-wavy/wavy-prototype/wavy-prototype.component';
 
 
 
@@ -98,7 +100,9 @@ import { DesignProcComponent } from './projects/content-wavy/design-proc/design-
     OpportunityComponent,
     ConclusionComponent,
     DesignReqComponent,
-    DesignProcComponent
+    DesignProcComponent,
+    DesignDocumentsComponent,
+    WavyPrototypeComponent
     
    
   ],

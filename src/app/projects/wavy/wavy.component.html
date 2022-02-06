@@ -180,6 +180,21 @@
       </span>
     </span>
 
+    <!--UI documents-->
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button
+          (click)="toggleUI()"
+          class="tab-label"
+          [ngClass]="{ designdocs: selectedUiDesign == true }"
+        >
+          Design Files
+        </button>
+      </span>
+    </span>
+
+    <!--Prototypes documents-->
+
     <span class="final-block"> </span>
     <!--end of the navigation menu-->
   </span>
@@ -230,11 +245,39 @@
     </span>
 
     <!--scopes-->
-    <span *ngIf="selectedConstraints" class="content"> </span>
+    <span *ngIf="selectedConstraints" class="content">
+      <app-scopes-constraints></app-scopes-constraints>
+    </span>
 
     <!--conclusion-->
     <span *ngIf="selectedConclusion" class="content">
       <app-conclusion></app-conclusion>
+    </span>
+
+    <!--design principles-->
+    <span *ngIf="selectedDesignPrinciples" class="content">
+      <app-design-principles></app-design-principles>
+    </span>
+
+    <!--design principles requirements-->
+    <span *ngIf="selectedDesignRequirements" class="content">
+      <app-design-req></app-design-req>
+    </span>
+
+    <!--design principles process-->
+    <span *ngIf="selectedDesignProcess" class="content">
+      <app-design-proc></app-design-proc>
+    </span>
+
+    <!--design documents -->
+
+    <span *ngIf="selectedUiDesign" class="content">
+      <app-design-documents></app-design-documents>
+    </span>
+
+    <!--prototype-->
+    <span *ngIf="selectedPrototype" class="content">
+      <app-wavy-prototype></app-wavy-prototype>
     </span>
   </span>
 </span>

@@ -32,11 +32,50 @@ export class WavyComponent implements OnInit {
   selectedDesignRequirements:boolean =false;
 
   selectedDesignProcess:boolean = false;
+  selectedUiDesign:boolean = false;
+  selectedPrototype:boolean = false;
 
 
   ngOnInit(): void {
   }
 
+toggleUI(){
+  this.selectedUiDesign =! this.selectedUiDesign;
+  this.showMe = false;
+  this.selectedObjectives =false;
+  this.selectedImpact = false;
+  this.selectedOpportunity=false
+  this.selectedConclusion=false;
+  this.selectedConstraints=false;
+  this.selectedFindings=false;
+  this.selectedResearch=false;
+  this.selectedDesignPrinciples=false;
+  this.selectedDesignRequirements=false;
+  this.selectedCompetition=false;
+  this.selectedDesignProcess = false;
+  this.selectedDesignProcess = false;
+
+}
+
+togglePrototype(){
+  this.selectedPrototype =! this.selectedPrototype ;
+  this.showMe = false;
+  this.selectedObjectives =false;
+  this.selectedImpact = false;
+  this.selectedOpportunity=false
+  this.selectedConclusion=false;
+  this.selectedConstraints=false;
+  this.selectedFindings=false;
+  this.selectedResearch=false;
+  this.selectedDesignPrinciples=false;
+  this.selectedDesignRequirements=false;
+  this.selectedCompetition=false;
+  this.selectedUiDesign = false;
+  this.selectedDesignProcess = false;
+}
+
+
+  
   toggleDesignProcess(){
     this.selectedDesignProcess =! this.selectedDesignProcess;
     this.showMe = false;
@@ -50,11 +89,13 @@ export class WavyComponent implements OnInit {
     this.selectedDesignPrinciples=false;
     this.selectedDesignRequirements=false;
     this.selectedCompetition=false;
+    this.selectedUiDesign = false;
+    this.selectedPrototype = false;
 
   }
 
 toggleDesignPrinciples(){
-  this.selectedDesignPrinciples =! this.toggleDesignPrinciples;
+  this.selectedDesignPrinciples =! this.selectedDesignPrinciples;
   this.showMe = false;
   this.selectedObjectives =false;
   this.selectedImpact = false;
@@ -65,6 +106,9 @@ toggleDesignPrinciples(){
   this.selectedResearch=false;
   this.selectedDesignRequirements=false;
   this.selectedCompetition=false;
+  this.selectedDesignProcess = false;
+  this.selectedUiDesign = false;
+  this.selectedPrototype = false;
 }
 
 toggleDesignRequirements(){
@@ -79,6 +123,8 @@ toggleDesignRequirements(){
   this.selectedResearch=false;
   this.selectedDesignPrinciples=false;
   this.selectedCompetition=false;
+  this.selectedUiDesign = false;
+  this.selectedPrototype = false;
 }
 
   toggleButton(){
@@ -93,6 +139,8 @@ toggleDesignRequirements(){
     this.selectedConclusion=false;
     this.selectedDesignPrinciples=false;
     this.selectedDesignRequirements=false;
+    this.selectedUiDesign = false;
+    this.selectedPrototype = false;
   }
 
   toggleCompetition(){
@@ -107,6 +155,8 @@ toggleDesignRequirements(){
     this.selectedResearch=false;
     this.selectedDesignPrinciples=false;
     this.selectedDesignRequirements=false;
+    this.selectedUiDesign = false;
+    this.selectedPrototype = false;
   }
 
   toggleProblemStatement(){
@@ -122,6 +172,8 @@ toggleDesignRequirements(){
     this.selectedCompetition=false;
     this.selectedDesignPrinciples=false;
     this.selectedDesignRequirements=false;
+    this.selectedUiDesign = false;
+    this.selectedPrototype = false;
   }
 
   toggleObjectives(){
@@ -136,6 +188,8 @@ toggleDesignRequirements(){
     this.selectedResearch=false;
     this.selectedDesignPrinciples=false;
     this.selectedDesignRequirements=false;
+    this.selectedUiDesign = false;
+    this.selectedPrototype = false;
   }
 
   toggleImpact(){
@@ -151,6 +205,8 @@ toggleDesignRequirements(){
     this.selectedCompetition=false;
     this.selectedDesignPrinciples=false;
     this.selectedDesignRequirements=false;
+    this.selectedUiDesign = false;
+    this.selectedPrototype = false;
 
   }
 
@@ -167,6 +223,8 @@ toggleDesignRequirements(){
     this.selectedCompetition=false;
     this.selectedDesignPrinciples=false;
     this.selectedDesignRequirements=false;
+    this.selectedUiDesign = false;
+    this.selectedPrototype = false;
   }
 
   toggleResearch(){
@@ -182,6 +240,8 @@ toggleDesignRequirements(){
     this.selectedDesignPrinciples=false;
     this.selectedDesignRequirements=false;
     this.selectedCompetition=false;
+    this.selectedUiDesign = false;
+    this.selectedPrototype = false;
   
   }
 
@@ -197,6 +257,8 @@ toggleDesignRequirements(){
     this.selectedCompetition=false;
     this.selectedDesignPrinciples=false;
     this.selectedDesignRequirements=false;
+    this.selectedUiDesign = false;
+    this.selectedPrototype = false;
   }
 
   toggleFindings(){
@@ -212,6 +274,8 @@ this.selectedObjectives = false;
     this.selectedCompetition=false;
     this.selectedDesignPrinciples=false;
     this.selectedDesignRequirements=false;
+    this.selectedUiDesign = false;
+    this.selectedPrototype = false;
 
   }
 
@@ -228,6 +292,8 @@ this.selectedObjectives = false;
     this.selectedCompetition=false;
     this.selectedDesignPrinciples=false;
     this.selectedDesignRequirements=false;
+    this.selectedUiDesign = false;
+    this.selectedPrototype = false;
   }
 
 }

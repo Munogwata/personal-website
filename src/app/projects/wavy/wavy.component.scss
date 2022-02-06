@@ -18,6 +18,12 @@
   border: none;
 
   background-color: gs.$white;
+  cursor: pointer;
+
+  &:hover {
+    color: gs.$soft-pink;
+    @include gs.h6;
+  }
 }
 
 .navigation-column {
@@ -117,6 +123,14 @@
 }
 
 .impact {
+  color: gs.$dark-lavender;
+}
+
+.designdocs {
+  color: gs.$dark-lavender;
+}
+
+.designprocess {
   color: gs.$dark-lavender;
 }
 

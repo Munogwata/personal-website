@@ -52,6 +52,15 @@
   }
 }
 
+.image-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
 .project-tab-small {
   border: none;
   background-color: gs.$white;
@@ -63,6 +72,17 @@
   padding: 0;
   cursor: pointer;
   margin-bottom: 15px;
+}
+
+.image-internal {
+  width: 70%;
+  height: fit-content;
+  object-fit: fill;
+  &:hover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .button-body {
@@ -92,6 +112,10 @@ br {
 .body {
   margin-right: 121px;
   @include gs.b2;
+}
+
+a {
+  text-decoration: none;
 }
 
 .underline {
