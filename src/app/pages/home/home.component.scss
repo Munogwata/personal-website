@@ -14,7 +14,7 @@
   width: 100%;
   display: flex;
   margin-bottom: 100px;
-  margin-top: 25px;
+  margin-top: 15px;
   background-color: white;
   justify-content: center;
   justify-items: center;
@@ -24,6 +24,15 @@
 
 .projects-navigation {
   display: none;
+}
+
+.copyright {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  justify-items: center;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
 @media (max-width: gs.$tablet) {

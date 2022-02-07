@@ -1,0 +1,242 @@
+@use "../general-styles/" as gs;
+
+.media-box {
+  margin-top: 30px;
+  margin-left: 121px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-between;
+  width: 1186px;
+  flex-direction: column;
+}
+
+.tagline {
+  @include gs.h6;
+  color: gs.$deep-lavender;
+}
+
+.subheading {
+  @include gs.h4;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+}
+
+.media-cards-box {
+  display: flex;
+  justify-content: space-between;
+  justify-items: space-between;
+  height: fit-content;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.media-cards-long {
+  margin-top: 10px;
+  display: flex;
+}
+
+.two-box {
+  display: flex;
+  justify-content: space-between;
+  justify-items: space-between;
+  flex-direction: row;
+  width: 680px;
+  height: 480px;
+}
+
+.media-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: space-around;
+  align-items: center;
+  align-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 286px;
+  height: 480px;
+  box-shadow: 5px 5px 3px rgba($color: #000000, $alpha: 0.25);
+  border: gs.$basic-grey 2px solid;
+}
+
+.media-image {
+  width: 258px;
+  object-fit: contain;
+}
+
+.card-tagline {
+  @include gs.s2;
+  color: gs.$deep-lavender;
+}
+
+.card-content {
+  width: 245px;
+  display: flex;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  flex-direction: column;
+}
+.card-title {
+  @include gs.h5;
+}
+
+.card-button {
+  width: 115px;
+  height: 35px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: gs.$deep-lavender;
+  color: gs.$white;
+  border: none;
+  border-radius: 10px;
+
+  &__hidden {
+    visibility: hidden;
+  }
+}
+
+.row-two {
+  display: flex;
+  justify-content: space-between;
+  justify-items: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+a {
+  text-decoration: none;
+  color: gs.$white;
+  @include gs.s2;
+}
+
+.media-cards-long-stack {
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.media-rectangle {
+  width: 402px;
+  height: 90px;
+  box-shadow: 2px 2px 1px rgba($color: #000000, $alpha: 0.25);
+  border: gs.$basic-grey 2px solid;
+  background-color: gs.$white;
+  display: flex;
+  justify-content: space-around;
+  justify-items: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-left: 3px;
+  padding-right: 3px;
+  &-left {
+    width: 365px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.button-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: gs.$deep-lavender;
+  border: none;
+  display: flex;
+  margin-top: 5px;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  &-arrow {
+    color: gs.$white;
+    font-size: 30px;
+    padding-right: 5px;
+  }
+}
+
+.small-heading {
+  @include gs.s1;
+}
+
+.small-tag {
+  @include gs.b2;
+  color: gs.$deep-lavender;
+}
+
+@media (max-width: gs.$tablet) {
+  .media-cards-box {
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+
+    margin-left: 0px;
+  }
+
+  .media-box {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .row-two {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .two-box {
+    justify-content: space-around;
+    justify-content: space-around;
+  }
+
+  .tagline {
+    margin-left: 10px;
+  }
+
+  .subheading {
+    margin-left: 10px;
+  }
+
+  .two-box {
+    width: 100%;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: gs.$mobile) {
+  .row-two {
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .two-box {
+    justify-content: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  .media-card {
+    margin-bottom: 35px;
+  }
+}
