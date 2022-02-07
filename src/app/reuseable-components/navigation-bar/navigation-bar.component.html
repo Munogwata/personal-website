@@ -1,7 +1,6 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav
     #drawer
-    [ngClass]="{ hidden: !(isHandset$ | async) == true }"
     class="sidenav"
     fixedInViewport="false"
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
@@ -19,9 +18,7 @@
         <mat-icon class="button">close</mat-icon>
       </button>
     </mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item class="menu-link" routerLink="">Munozovepi Gwata</a>
-    </mat-nav-list>
+    <mat-nav-list> </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content class="page-container">
@@ -29,6 +26,14 @@
 
     <mat-toolbar class="colored-nav-bar">
       <mat-toolbar-row class="top-menu">
+        <a href="mailto:muno.gwata@gmail.com">
+          <img
+            src="../../../assets/images/general/gmail-icon.png"
+            class="top-menu-icons"
+            alt="link to Munozovepi's github account"
+          />
+        </a>
+
         <a href="https://github.com/Munogwata" target="_blank">
           <img
             src="../../../assets/images/menu-items/Github_logo.png"
@@ -47,13 +52,9 @@
 
       <!--main menu-->
       <mat-toolbar-row class="main-menu">
-        <span class="logo-link">
-          <app-logo></app-logo>
+        <span>
+          <a mat-list-item class="menu-link" routerLink="">Munozovepi Gwata</a>
         </span>
-
-        <button class="button-circle" type="button" *ngIf="isHandset$ | async">
-          <a class="logo-link-b" routerLink="">M</a>
-        </button>
       </mat-toolbar-row>
     </mat-toolbar>
 

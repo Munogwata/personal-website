@@ -1,1 +1,109 @@
-<p>me works!</p>
+<span class="page-container">
+  <!--column 1-->
+  <span class="navigation-column">
+    <span class="project-number"> 04</span>
+    <span class="project-heading"> Get to know me - Personal Website </span>
+
+    <!--Introduction Tab-->
+    <span class="tab-label-box">
+      <button class="tab-label" (click)="toggleIntro()">Introduction</button>
+    </span>
+
+    <!--Objectives Tab-->
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button (click)="toggleObjectives()" class="tab-label">
+          Project Objective
+        </button>
+      </span>
+    </span>
+
+    <!--Design Principles Tab-->
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button (click)="togglePrinciples()" class="tab-label">
+          Design Principles
+        </button>
+      </span>
+    </span>
+
+    <!--Design Requirements-->
+    <span class="tab-label-box">
+      <span class="tab-label">
+        <button (click)="toggleRequirements()" class="tab-label">
+          Design Requirements
+        </button>
+      </span>
+    </span>
+
+    <span class="final-block"> </span>
+    <!--end of the navigation menu-->
+  </span>
+
+  <!--column 2-->
+  <!--the project content-->
+
+  <span class="project-content">
+    <span class="project-number-false"> 01</span>
+    <span class="project-heading-false"> Should I Invest? </span>
+
+    <!--Intro -->
+
+    <span *ngIf="selectedIntro" class="content">
+      <span class="content-paragraph">
+        <span class="bold"> Title: Wavy, Should I Invest in? </span>
+
+        <span class="bold"> Role: User Experience Researcher and User </span>
+
+        <span class="bold">
+          Timeline to Develop MVP: 29 October 2021 - 05 December 2021.
+        </span>
+
+        <span class="space"></span>
+
+        <span class="body">
+          Wavy is a web application that allows users to build a profitable
+          investment portfolio.
+        </span>
+
+        <span class="space"></span>
+
+        <span class="bold-sub-heading"> How? </span>
+
+        <span class="space"></span>
+
+        <span class="body">
+          Wavy allows users to identify which listed investment products best
+          suits their financial objectives. All the user has to do is search the
+          investment product that they wish to learn more about. With A simple
+          Wavy search users will be provided with, the average annual return,
+          the risk profile, potential dividend earnings, the potential tax
+          implications and the expected performance of the searched financial
+          product. Furthermore, they will also be provided with the potential
+          returns they can expect from the product. All this information gives
+          the user access to fundamental information about listed financial
+          products, that will empower them in making informed investment
+          decisions. Wavy is designed to function as the leading platform that
+          aids in transforming everyday consumers into knowledgeable capital
+          market investors.
+        </span>
+
+        <span class="space"></span>
+
+        <span class="final-block-space"></span>
+      </span>
+    </span>
+
+    <!--Objectives -->
+
+    <span *ngIf="selectedObjectives" class="content"> OS </span>
+
+    <!--Design Principles -->
+
+    <span *ngIf="selectedPrinciples" class="content"> DP </span>
+
+    <!--Design Principles -->
+
+    <span *ngIf="selectedRequirements" class="content"> DR </span>
+  </span>
+</span>

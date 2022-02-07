@@ -1,5 +1,9 @@
 @use "../../general-styles/" as gs;
 
+.hero-page {
+  cursor: url("../../../assets/images/general/custom-cursor.png"), pointer;
+}
+
 .hero-background {
   background-image: url("../../../assets/images/general/Background.svg");
   width: 100%;
@@ -8,6 +12,7 @@
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: url("../../../assets/images/general/custom-cursor.png"), pointer;
 }
 
 .project-cards {
@@ -20,6 +25,7 @@
   justify-items: center;
   align-items: center;
   align-content: center;
+  cursor: url("../../../assets/images/general/custom-cursor.png"), pointer;
 }
 
 .projects-navigation {
@@ -33,6 +39,7 @@
   justify-items: center;
   padding: 10px;
   margin-bottom: 15px;
+  cursor: url("../../../assets/images/general/custom-cursor.png"), pointer;
 }
 
 @media (max-width: gs.$tablet) {

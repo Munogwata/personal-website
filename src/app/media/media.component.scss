@@ -183,7 +183,8 @@ a {
     flex-direction: column;
     width: 100%;
     height: fit-content;
-
+    justify-content: center;
+    justify-items: center;
     margin-left: 0px;
   }
 
@@ -195,10 +196,22 @@ a {
   .row-two {
     flex-direction: column;
     margin-left: 20px;
+    //width: 100%;
+    justify-content: center;
+    justify-content: center;
   }
   .two-box {
     justify-content: space-around;
     justify-content: space-around;
+  }
+
+  .media-cards-long-stack {
+    width: 100%;
+    display: flex;
+    justify-items: space-around;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
   }
 
   .tagline {
@@ -234,6 +247,15 @@ a {
     align-items: center;
     height: fit-content;
     flex-direction: column;
+  }
+
+  .media-cards-long-stack {
+    width: 100%;
+    display: flex;
+    justify-items: space-around;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
   }
 
   .media-card {

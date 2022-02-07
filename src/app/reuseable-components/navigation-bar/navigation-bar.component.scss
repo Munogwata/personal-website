@@ -1,8 +1,10 @@
 @use "../../component-styles/website/navigation-menu" as nm;
+@use "../../general-styles/" as gs;
 
 .sidenav-container {
   height: 100%;
   background-color: white;
+  cursor: url("../../../assets/images/general/custom-cursor.png"), pointer;
 }
 
 .sidenav {
@@ -11,6 +13,7 @@
 
 .sidenav .mat-toolbar {
   background: inherit;
+  cursor: url("../../../assets/images/general/custom-cursor.png"), pointer;
 }
 
 .mat-toolbar.mat-primary {
@@ -19,11 +22,8 @@
   z-index: 1;
 }
 
-.hidden {
-  display: none;
-}
-
 .default-page {
   min-height: 100vh;
   background-color: white;
+  cursor: url("../../../assets/images/general/custom-cursor.png"), pointer;
 }

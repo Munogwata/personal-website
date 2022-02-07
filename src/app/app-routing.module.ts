@@ -2,12 +2,15 @@ import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MeComponent } from './projects/me/me.component';
 import { WavyComponent } from './projects/wavy/wavy.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'About', component:AboutComponent},
   {path: 'Wavy', component:WavyComponent},
+  {path: 'Personal Website', component:MeComponent},
+  
 ];
 
 const routerOptions : ExtraOptions ={
