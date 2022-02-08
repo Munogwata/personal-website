@@ -71,6 +71,7 @@ this.selectedPrinciples = false;
   this.selectedScopes= false;
   this.selectedOutcome=false;
   this.selectedPrinciples = false;
+  this.selectedRequirements=false;
   }
 
 
@@ -83,6 +84,7 @@ this.selectedPrinciples = false;
   this.selectedScopes= false;
   this.selectedOutcome=false;
   this.selectedPrinciples = false;
+  this.selectedRequirements=false;
   }
   
   toggleUserResearch(){
@@ -94,6 +96,7 @@ this.selectedPrinciples = false;
   this.selectedScopes= false;
   this.selectedOutcome=false;
   this.selectedPrinciples = false;
+  this.selectedRequirements=false;
   }
 
   toggleMainFindings(){
@@ -105,6 +108,7 @@ this.selectedPrinciples = false;
   this.selectedScopes= false;
   this.selectedOutcome=false;
   this.selectedPrinciples = false;
+  this.selectedRequirements=false;
   }
 
   toggleScopes(){
@@ -116,6 +120,7 @@ this.selectedPrinciples = false;
   this.selectedMainFindings= false;
   this.selectedOutcome=false;
   this.selectedPrinciples = false;
+  this.selectedRequirements=false;
   }
 
   toggleOutcome(){
@@ -127,6 +132,7 @@ this.selectedPrinciples = false;
   this.selectedMainFindings= false;
   this.selectedScopes=false;
   this.selectedPrinciples = false;
+  this.selectedRequirements=false;
   }
 
  

@@ -44,6 +44,7 @@ export class ScoreResearchComponent implements OnInit {
     this.selectedRaj = false;
     this.selectedThabo = false;
     this.selectedZakiyah = false;
+    this.selectedKarabo = false;
   }
 
   toggleJa(){
@@ -64,8 +65,8 @@ export class ScoreResearchComponent implements OnInit {
     this.selectedZakiyah = false;
   }
 
-  toggleTh(){
-    this.selectedThabo =! this.selectedThabo;
+  toggleThabo(){
+this.selectedThabo =! this.selectedThabo
     this.selectedJohan = false;
     this.selectedKlara = false;
     this.selectedRaj = false;

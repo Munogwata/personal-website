@@ -92,23 +92,12 @@
       <span class="tab-heading"> User Interface Design </span>
     </span>
 
-    <!--Design Principles-->
-    <span class="tab-label-box">
-      <button
-        class="tab-label"
-        (click)="toggleDesignPrinciplesScore()"
-        [ngClass]="{ principles: selectedPrinciples == true }"
-      >
-        Design Principles
-      </button>
-    </span>
-
     <!--Design Requirements-->
     <span class="tab-label-box">
       <button
         class="tab-label"
         (click)="toggleDesignRequirements()"
-        [ngClass]="{ requirments: selectedPrinciples == true }"
+        [ngClass]="{ requirements: selectedPrinciples == true }"
       >
         Design Requirements
       </button>
@@ -123,7 +112,7 @@
   <!--column 2--><!--the project content-->
   <span class="project-content">
     <span class="project-number-false"> 01</span>
-    <span class="project-heading-false"> Should I Invest? </span>
+    <span class="project-heading-false"> Score: Build your Credit Score. </span>
 
     <!--introduction -->
     <span *ngIf="selectedIntro" class="content">
@@ -158,11 +147,6 @@
     <!--outcome -->
     <span *ngIf="selectedOutcome" class="content">
       <app-score-outcomes></app-score-outcomes>
-    </span>
-
-    <!--design principles -->
-    <span *ngIf="selectedPrinciples" class="content">
-      <app-score-principles></app-score-principles>
     </span>
 
     <!--design requirments -->

@@ -1,0 +1,20 @@
+@use "../../../component-styles/website/project-details" as ps;
+
+@use "../../../component-styles/website/project-structure" as pe;
+
+@use "../../../general-styles/" as gs;
+
+.body-bold {
+  @include gs.b1;
+  font-weight: bold;
+}
+
+.sub-heading {
+  @include gs.s1;
+  font-weight: bold;
+}
+
+.small-space {
+  display: flex;
+  margin-bottom: 5px;
+}
