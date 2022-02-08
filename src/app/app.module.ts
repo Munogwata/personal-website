@@ -63,6 +63,7 @@ import { ScoreOutcomesComponent } from './projects/score-content/score-outcomes/
 import { ScoreMainComponent } from './projects/score-content/score-main/score-main.component';
 import { ScorePrinciplesComponent } from './projects/score-content/score-principles/score-principles.component';
 import { ScoreRequirementsComponent } from './projects/score-content/score-requirements/score-requirements.component';
+import { AstuteContentComponent } from './projects/astute-content/astute-content.component';
 
 
 
@@ -120,7 +121,8 @@ import { ScoreRequirementsComponent } from './projects/score-content/score-requi
     ScoreOutcomesComponent,
     ScoreMainComponent,
     ScorePrinciplesComponent,
-    ScoreRequirementsComponent
+    ScoreRequirementsComponent,
+    AstuteContentComponent
     
    
   ],

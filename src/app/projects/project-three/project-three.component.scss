@@ -7,6 +7,10 @@
   height: 580px;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media (max-width: gs.$tablet) {
   .cover-image {
     object-fit: contain;
