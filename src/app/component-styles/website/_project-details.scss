@@ -4,9 +4,7 @@
   display: flex;
   flex-direction: column;
   height: fit-content;
-  //background-color: gs.$white;
-
-  background-color: aqua;
+  background-color: gs.$white;
 }
 
 .tabs-container {
@@ -47,6 +45,21 @@
   padding: 0;
   cursor: pointer;
   margin-bottom: 25px;
+
+  &:hover {
+    color: gs.$soft-pink;
+    @include gs.h6;
+  }
+}
+
+.tab-label {
+  @include gs.s1;
+
+  color: gs.$black;
+  border: none;
+
+  background-color: gs.$white;
+  cursor: pointer;
 
   &:hover {
     color: gs.$soft-pink;
@@ -97,8 +110,8 @@
 }
 
 .bold-sub-heading {
-  font-weight: gs.$bold;
-  @include gs.b1;
+  font-weight: bold;
+  @include gs.s2;
   margin-bottom: 5px;
 }
 

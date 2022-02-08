@@ -1,0 +1,35 @@
+@use "../../general-styles/" as gs;
+@use "../../component-styles/website/project-details" as ps;
+@use "../../component-styles/website/project-structure" as pe;
+
+.intro {
+  color: gs.$dark-lavender;
+}
+
+.score {
+  color: gs.$dark-lavender;
+}
+
+.market {
+  color: gs.$dark-lavender;
+}
+
+.research {
+  color: gs.$dark-lavender;
+}
+
+.mainfindings {
+  color: gs.$dark-lavender;
+}
+
+.scopes {
+  color: gs.$dark-lavender;
+}
+
+.outcome {
+  color: gs.$dark-lavender;
+}
+
+.principles {
+  color: gs.$dark-lavender;
+}

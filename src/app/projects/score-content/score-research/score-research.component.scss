@@ -1,0 +1,42 @@
+@use "../../../component-styles/website/project-structure" as pe;
+@use "../../../component-styles/website/project-details" as ps;
+@use "../../../general-styles/" as gs;
+
+.bold-sub-heading {
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.kl {
+  text-decoration: underline;
+}
+
+.ka {
+  text-decoration: underline;
+}
+
+.jo {
+  text-decoration: underline;
+}
+
+.raj {
+  text-decoration: underline;
+}
+
+.th {
+  text-decoration: underline;
+}
+
+.body-bold {
+  font-weight: bold;
+  @include gs.s2;
+  margin-bottom: 5px;
+}

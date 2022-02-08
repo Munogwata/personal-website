@@ -18,6 +18,14 @@
   border: none;
 
   background-color: gs.$white;
+
+  &-false {
+    color: white;
+  }
+}
+
+.button-false {
+  display: none;
 }
 
 .navigation-column {
@@ -175,10 +183,12 @@
 
   .project-number-false {
     display: none;
+    visibility: hidden;
   }
 
   .project-heading-false {
     display: none;
+    visibility: hidden;
   }
 
   .navigation-column {

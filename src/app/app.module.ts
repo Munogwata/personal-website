@@ -54,6 +54,15 @@ import { DesignReqComponent } from './projects/content-wavy/design-req/design-re
 import { DesignProcComponent } from './projects/content-wavy/design-proc/design-proc.component';
 import { DesignDocumentsComponent } from './projects/content-wavy/design-documents/design-documents.component';
 import { WavyPrototypeComponent } from './projects/content-wavy/wavy-prototype/wavy-prototype.component';
+import { ScoreIntroComponent } from './projects/score-content/score-intro/score-intro.component';
+import { ScoreObjectivesComponent } from './projects/score-content/score-objectives/score-objectives.component';
+import { ScoreMarketComponent } from './projects/score-content/score-market/score-market.component';
+import { ScoreResearchComponent } from './projects/score-content/score-research/score-research.component';
+import { ScoreScopesComponent } from './projects/score-content/score-scopes/score-scopes.component';
+import { ScoreOutcomesComponent } from './projects/score-content/score-outcomes/score-outcomes.component';
+import { ScoreMainComponent } from './projects/score-content/score-main/score-main.component';
+import { ScorePrinciplesComponent } from './projects/score-content/score-principles/score-principles.component';
+import { ScoreRequirementsComponent } from './projects/score-content/score-requirements/score-requirements.component';
 
 
 
@@ -102,7 +111,16 @@ import { WavyPrototypeComponent } from './projects/content-wavy/wavy-prototype/w
     DesignReqComponent,
     DesignProcComponent,
     DesignDocumentsComponent,
-    WavyPrototypeComponent
+    WavyPrototypeComponent,
+    ScoreIntroComponent,
+    ScoreObjectivesComponent,
+    ScoreMarketComponent,
+    ScoreResearchComponent,
+    ScoreScopesComponent,
+    ScoreOutcomesComponent,
+    ScoreMainComponent,
+    ScorePrinciplesComponent,
+    ScoreRequirementsComponent
     
    
   ],

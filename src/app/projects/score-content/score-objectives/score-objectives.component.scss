@@ -1,0 +1,15 @@
+@use "../../../component-styles/website/project-details" as ps;
+@use "../../../component-styles/website/project-structure" as pe;
+
+.bold-sub-heading {
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+  font-weight: bold;
+}

@@ -1,1 +1,173 @@
-<p>score works!</p>
+<span class="page-container">
+  <!--column 1-->
+
+  <span class="navigation-column">
+    <span class="project-number"> 02</span>
+    <span class="project-heading"> Score: Build your Credit Score. </span>
+
+    <!--Introduction Tab-->
+    <span class="tab-label-box">
+      <button
+        class="tab-label"
+        (click)="toggleScoreIntro()"
+        [ngClass]="{ intro: selectedIntro == true }"
+      >
+        Introduction
+      </button>
+    </span>
+
+    <!--divider-->
+    <span class="tab-label-box">
+      <span class="tab-heading"> User Experience Case Study </span>
+    </span>
+
+    <!--Score Obejective Tab-->
+    <span class="tab-label-box">
+      <button
+        class="tab-label"
+        (click)="toggleObjectivesScore()"
+        [ngClass]="{ score: selectedObjectivesScore == true }"
+      >
+        The Objectives of Score
+      </button>
+    </span>
+
+    <!--Market Tab-->
+    <span class="tab-label-box">
+      <button
+        class="tab-label"
+        (click)="toggleMarket()"
+        [ngClass]="{ market: selectedMarket == true }"
+      >
+        Market Opportunities for Score
+      </button>
+    </span>
+
+    <!--User Research Tab-->
+    <span class="tab-label-box">
+      <button
+        class="tab-label"
+        (click)="toggleUserResearch()"
+        [ngClass]="{ research: selectedUserResearch == true }"
+      >
+        User Research
+      </button>
+    </span>
+
+    <!--Main Findings Tab-->
+    <span class="tab-label-box">
+      <button
+        class="tab-label"
+        (click)="toggleMainFindings()"
+        [ngClass]="{ mainfindings: selectedMainFindings == true }"
+      >
+        Main Findings
+      </button>
+    </span>
+
+    <!--ScopesTab-->
+    <span class="tab-label-box">
+      <button
+        class="tab-label"
+        (click)="toggleScopes()"
+        [ngClass]="{ scopes: selectedScopes == true }"
+      >
+        Scopes and Constraints
+      </button>
+    </span>
+
+    <!--Outcome Tab-->
+    <span class="tab-label-box">
+      <button
+        class="tab-label"
+        (click)="toggleOutcome()"
+        [ngClass]="{ outcome: selectedOutcome == true }"
+      >
+        Outcomes
+      </button>
+    </span>
+
+    <!--divider-->
+    <span class="tab-label-box">
+      <span class="tab-heading"> User Interface Design </span>
+    </span>
+
+    <!--Design Principles-->
+    <span class="tab-label-box">
+      <button
+        class="tab-label"
+        (click)="toggleDesignPrinciplesScore()"
+        [ngClass]="{ principles: selectedPrinciples == true }"
+      >
+        Design Principles
+      </button>
+    </span>
+
+    <!--Design Requirements-->
+    <span class="tab-label-box">
+      <button
+        class="tab-label"
+        (click)="toggleDesignRequirements()"
+        [ngClass]="{ requirments: selectedPrinciples == true }"
+      >
+        Design Requirements
+      </button>
+    </span>
+
+    <span class="final-block"> </span>
+    <!--end of the navigation menu-->
+
+    <!--end of navigation column-->
+  </span>
+
+  <!--column 2--><!--the project content-->
+  <span class="project-content">
+    <span class="project-number-false"> 01</span>
+    <span class="project-heading-false"> Should I Invest? </span>
+
+    <!--introduction -->
+    <span *ngIf="selectedIntro" class="content">
+      <app-score-intro></app-score-intro>
+    </span>
+
+    <!--objectives -->
+    <span *ngIf="selectedObjectivesScore" class="content">
+      <app-score-objectives></app-score-objectives>
+    </span>
+
+    <!--market-gap -->
+    <span *ngIf="selectedMarket" class="content">
+      <app-score-market></app-score-market>
+    </span>
+
+    <!--research -->
+    <span *ngIf="selectedUserResearch" class="content">
+      <app-score-research></app-score-research>
+    </span>
+
+    <!--mainfindings -->
+    <span *ngIf="selectedMainFindings" class="content">
+      <app-score-main></app-score-main>
+    </span>
+
+    <!--mainfindings -->
+    <span *ngIf="selectedScopes" class="content">
+      <app-score-scopes></app-score-scopes>
+    </span>
+
+    <!--outcome -->
+    <span *ngIf="selectedOutcome" class="content">
+      <app-score-outcomes></app-score-outcomes>
+    </span>
+
+    <!--design principles -->
+    <span *ngIf="selectedPrinciples" class="content">
+      <app-score-principles></app-score-principles>
+    </span>
+
+    <!--design requirments -->
+    <span *ngIf="selectedRequirements" class="content">
+      <app-score-requirements></app-score-requirements>
+    </span>
+  </span>
+</span>

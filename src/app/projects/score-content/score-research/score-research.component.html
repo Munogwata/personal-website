@@ -1,0 +1,173 @@
+<span class="content-paragraph">
+  <span class="body">
+    The methodology I used to conduct this user research was to engage in
+    interviews with people in my network, and ask them on the experiences,
+    opinion and perspectives on debt management and building a credit score.
+    <br />
+    <br />
+    In doing this research I tried to ask each person whose true identities have
+    been kept confidential and instead signed to a persona, the same set of
+    questions. The following questions that I asked are:
+  </span>
+  <br />
+  <span class="body">
+    <ul>
+      <li>What is their current understanding of credit scores?</li>
+      <li>What their age?</li>
+      <li>What is their highest academic qualification?</li>
+      <li>What is their profession?</li>
+      <li>
+        How do they use technology in their life’s to manage their personal
+        finances?
+      </li>
+    </ul>
+  </span>
+  <br />
+
+  <span class="highlight body">
+    I choose these specific questions because I believed they would be most
+    effective in providing the necessary information to design a product that
+    has a good user experience which speaks to the needs of the target audience.
+    To further achieve this target after each interview with the users I
+    consolidates what I found to be their main pain points. This way it would be
+    easier to identify common themes and patterns from the user research.
+  </span>
+  <br />
+
+  <span class="bold"> Meet the Personas </span>
+  <br />
+
+  <!--meet Klara-->
+  <span class="tabs-container">
+    <span class="body">
+      <button
+        [ngClass]="{ kl: selectedKlara == true }"
+        type="button"
+        class="project-tab"
+        (click)="toggleKlara()"
+      >
+        Klara
+      </button>
+    </span>
+  </span>
+
+  <!--Klara content-->
+  <span *ngIf="selectedKlara" class="body">
+    <span class="body">
+      <span class="highlight body-bold">
+        Current perception and understanding of credit scores:
+      </span>
+      <br />
+      <br />
+
+      <span class="body">
+        Klara is of the strong view that credit scores are a “scam”. She
+        believes that credit scores are too much work to figure out and
+        understand. Klara has no idea where to start when it comes to finding
+        out about her current credit score, yet alone on how to build her credit
+        score. Furthermore, Klara does not have any credit at the moment and
+        relies on her savings and income to cover her expenses. As a result she
+        is very limited in what she owns and does not have any “big purchase
+        items” such as a car, house etc…, even though she is considered a high
+        earner.
+      </span>
+      <br />
+      <br />
+      <span class="body"> Age: 25 </span>
+      <br />
+      <br />
+      <span class="body"> Education level: MBBCh degree </span>
+      <br />
+      <br />
+      <span class="body"> Profession: Junior doctor </span>
+      <br />
+      <br />
+
+      <span class="body"> Relationship with technology and finance </span>
+      <span class="body">
+        Klara uses her smartphone daily, but does not have much experience with
+        money management apps and has not attempted to use them in the past. She
+        relies on making money estimations on scraps of paper that often go
+        missing, and therefore make it hard for her to track and manage the
+        development of her personal finances. When she runs into banking issues
+        her preference is to go to her nearest bank branch, if she cannot do
+        this she will call her bank, but she finds this to be very ineffective.
+      </span>
+
+      <span class="body">
+        <ul>
+          <li>
+            She finds it overwhelming to manage and build her credit score due
+            to a lack of understanding of debt principles and easily accessible
+            products that can guide and assist her in this regard;
+          </li>
+          <li>
+            She is unaware of personal finance management mobile applications
+            that are on the market; and
+          </li>
+          <li>She has a lack of financial literacy.</li>
+        </ul>
+      </span>
+      <br />
+      <br />
+    </span>
+  </span>
+
+  <!--meet Karabo-->
+  <span class="tabs-container">
+    <span class="body">
+      <button
+        [ngClass]="{ ka: selectedKarabo == true }"
+        type="button"
+        class="project-tab"
+        (click)="toggleK()"
+      >
+        Karabo
+      </button>
+    </span>
+  </span>
+
+  <!--meet Johan-->
+  <span class="tabs-container">
+    <span class="body">
+      <button
+        [ngClass]="{ jo: selectedJohan == true }"
+        type="button"
+        class="project-tab"
+        (click)="toggleJo()"
+      >
+        Johan
+      </button>
+    </span>
+  </span>
+
+  <!--meet Raj-->
+  <span class="tabs-container">
+    <span class="body">
+      <button
+        [ngClass]="{ raj: selectedRaj == true }"
+        type="button"
+        class="project-tab"
+        (click)="toggleRaj()"
+      >
+        Klara
+      </button>
+    </span>
+  </span>
+
+  <!--meet Th-->
+  <span class="tabs-container">
+    <span class="body">
+      <button
+        [ngClass]="{ th: selectedThabo == true }"
+        type="button"
+        class="project-tab"
+        (click)="toggleTh()"
+      >
+        Thabo
+      </button>
+    </span>
+  </span>
+
+  <span class="final-block-space"></span>
+</span>
